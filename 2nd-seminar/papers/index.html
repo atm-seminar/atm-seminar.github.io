@@ -1,0 +1,1195 @@
+
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <link rel="icon" href="../../static/images/favicon.ico" style="width: 16px; height: 16px;" type="image/x-icon"/>
+    
+    <title>ATM Seminar</title>
+
+    <!-- Bootstrap Core CSS -->
+    <link href="../../static/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Custom CSS -->
+    <link href="../../static/css/business-frontpage.css" rel="stylesheet">
+
+    <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+        <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+        <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
+    
+    <!-- Google Tag Manager -->
+<script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+})(window,document,'script','dataLayer','GTM-59LG5P');</script>
+<!-- End Google Tag Manager -->
+    
+    <!-- Google anayltics tag. For pdf automation, the GA tag should be in the head above the automation tag -->
+    <script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+
+  ga('create', 'UA-85684740-1', 'auto');
+  ga('send', 'pageview');
+        
+        
+        //handles outbound click links as events
+        function handleOutboundLinkClicks(event) {
+  ga('send', 'event', {
+      eventCategory: '11th-seminar',
+      eventCategory: '10th-seminar',
+      eventCategory: '9th-seminar',
+      eventCategory: '8th-seminar',
+      eventCategory: '7th-seminar',
+      eventCategory: '6th-seminar',
+      eventCategory: '5th-seminar',
+      eventCategory: '4th-seminar',
+      eventCategory: '3rd-seminar',
+      eventCategory: '2nd-seminar',
+      eventCategory: '1st-seminar',
+    eventAction: 'pdf',
+    eventLabel: event.target.href,
+      transport: 'beacon'
+  });
+}
+
+</script><!--End GA tag -->
+    
+    
+    
+    
+
+<script type="text/javascript" src="/static/js/jquery.js"></script>
+
+<style>
+h2.trigger {
+	padding: 0 0 0 0px;
+	margin: 0 0 5px 0;
+	background: url() no-repeat;
+	height: 46px;
+	line-height: 46px;
+	width: 400px;
+	font-size: 13px;
+	font-weight: bold;
+	float: left;
+}
+h2.trigger a {
+	color: #00F;
+	text-decoration: none;
+}
+h2.trigger a:hover { color: #ccc; }
+h2.active {background-position: left bottom;} /*--When toggle is triggered, it will shift the image to the bottom to show its "opened" state--*/
+.toggle_container {
+	margin: 0 0 5px;
+	padding: 0;
+	border-top: 1px solid #d6d6d6;
+	background: #f0f0f0 url() repeat-y left top;
+	overflow: hidden;
+	font-size: 14px;
+	width: 100%;
+	clear: both;
+}
+.toggle_container .block {
+	padding: 20px; /*--Padding of Container--*/
+	background: url() no-repeat left bottom; /*--Bottom rounded corners--*/
+}
+	.papers {border-collapse: collapse}
+	.papers td{border-bottom:1px solid grey;}
+	.papers td:first-child {border-right:1px solid grey;}
+	.papers th{text-align:center; border-bottom:1px solid black; padding-bottom:10px}
+
+	.papers td { padding:5px;  }
+	.papers td img{margin:0px; padding:5px 0 0 0; }
+</style>
+
+<script>
+$(document).ready(function(){
+
+	//Hide (Collapse) the toggle containers on load
+	$(".toggle_container").hide();
+
+	//Switch the "Open" and "Close" state per click then slide up/down (depending on open/close state)
+	$("h2.trigger").click(function(){
+		$(this).toggleClass("active").next().slideToggle("slow");
+		return false; //Prevent the browser jump to the link anchor
+	});
+
+});
+</script>
+
+
+
+
+
+</head>
+
+<body style="padding: 0 !important;">
+    <!-- Google Tag Manager (noscript) -->
+<noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-59LG5P"
+height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+<!-- End Google Tag Manager (noscript) -->
+
+   
+    <!-- Image Background Page Header -->
+    <!-- Note: The background image is set within the business-casual.css file. -->
+    <header class="business-header" style="background-color: black; height: 180px;">
+        <div class="container">
+            <div class="row">
+                <div class="col-xs-6">
+                  <img style="margin-top: 25px; margin-bottom: 25px;" class="img-responsive" src="../../static/images/atm_title.png" />
+                </div>
+            </div>
+        </div>
+    </header>
+    
+    <!--70c384-->
+     <!-- Navigation --> <!--navbar-fixed-top-->
+    <nav class="navbar navbar-default" role="navigation" >
+        <div class="container">
+            <!-- Brand and toggle get grouped for better mobile display -->
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <a class="navbar-brand" href="../../">Home</a>
+            </div>
+            <!-- Collect the nav links, forms, and other content for toggling -->
+            <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+                <ul class="nav navbar-nav">
+
+                             
+                     
+                    <li>
+                        <a href="../../upcoming-seminar/">Upcoming Seminar</a>
+                    </li>
+                    <li>
+                        <a href="../../past-seminars/">Past Seminars</a>
+                    </li>
+                    <li>
+                        <a href="../../contact.cfm">Contact</a>
+                    </li>
+                    
+                    
+                   
+                    
+                </ul>
+                
+                	
+                
+                
+            </div>
+            <!-- /.navbar-collapse -->
+        </div>
+        <!-- /.container -->
+    </nav>
+
+
+    <!-- Page Content -->
+    <div class="container">
+
+        
+
+  <h2>2nd Seminar Papers</h2>
+
+<div class="col-sm-12">
+
+
+<table class="table">
+  <thead class="thead-inverse">
+    <tr>
+      <th></th>
+      <th>Paper ID	</th>
+      <th>Title</th>
+      <th>Paper</th>
+      <th>Presentation</th>
+      <th>Theme</th>
+    </tr>
+  </thead>
+  <tbody>
+  <p>All papers and presentations can be downloaded and distributed free of charge. Please use the following publication reference: FAA/EUROCONTROL (Editors): Proceedings of the USA/FAA Air Traffic Management R&amp;D Seminar 1998. ISSN 2406-4068.</p>
+<tr>
+
+<td>1</td>
+<td>39</td>
+<td>
+    <strong>Dependability Analysesand Assessment of ARTAS</strong><br />
+    Author: <i>SylvainMetge, Alain Peytavin</i><br />
+</td>
+
+<td align="center">
+    <a href="/seminarContent/seminar2/papers/p_001_SMIAO.pdf" target="_blank"><img alt="pdf image" src="/static/images/large_pdf.gif" /></a>
+</td>
+<td align="center">&nbsp;
+
+</td>
+<td>
+    Short and Mid-Term Improvements to ATM Operations
+</td>
+</tr><tr>
+
+<td>2</td>
+<td>40</td>
+<td>
+    <strong>Weather AvoidancePlanning and Collaborative Routing Decisions</strong><br />
+    Author: <i>Art Shantz</i><br />
+</td>
+
+<td align="center">
+    <a href="/seminarContent/seminar2/papers/p_002_SMIAO.pdf" target="_blank"><img alt="pdf image" src="/static/images/large_pdf.gif" /></a>
+</td>
+<td align="center">&nbsp;
+
+</td>
+<td>
+    Short and Mid-Term Improvements to ATM Operations
+</td>
+</tr><tr>
+
+<td>3</td>
+<td>41</td>
+<td>
+    <strong>The Passive FinalApproach Spacing Tool (FAST) Human Factors Operational Assessment</strong><br />
+    Author: <i>Katharine K. LEE, Beverly D.SANFORD</i><br />
+</td>
+
+<td align="center">
+    <a href="/seminarContent/seminar2/papers/p_003_SMIAO.pdf" target="_blank"><img alt="pdf image" src="/static/images/large_pdf.gif" /></a>
+</td>
+<td align="center">&nbsp;
+
+</td>
+<td>
+    Short and Mid-Term Improvements to ATM Operations
+</td>
+</tr><tr>
+
+<td>4</td>
+<td>42</td>
+<td>
+    <strong>In depth Evaluationof ERATO Tools: Towards an Operational Prototype</strong><br />
+    Author: <i>Marcel LEROUX</i><br />
+</td>
+
+<td align="center">
+    <a href="/seminarContent/seminar2/papers/p_004_SMIAO.pdf" target="_blank"><img alt="pdf image" src="/static/images/large_pdf.gif" /></a>
+</td>
+<td align="center">&nbsp;
+
+</td>
+<td>
+    Short and Mid-Term Improvements to ATM Operations
+</td>
+</tr><tr>
+
+<td>5</td>
+<td>43</td>
+<td>
+    <strong>AirlineArrival Prioritization in Sequencing and Scheduling</strong><br />
+    Author: <i>Greg CARR, Heinz ERZBERGER, Frank NEUMAN</i><br />
+</td>
+
+<td align="center">
+    <a href="/seminarContent/seminar2/papers/p_005_SMIAO.pdf" target="_blank"><img alt="pdf image" src="/static/images/large_pdf.gif" /></a>
+</td>
+<td align="center">&nbsp;
+
+</td>
+<td>
+    Short and Mid-Term Improvements to ATM Operations
+</td>
+</tr><tr>
+
+<td>6</td>
+<td>44</td>
+<td>
+    <strong>Operational Conceptfor FAA Interfacility TFM Collaborative Decision Making</strong><br />
+    Author: <i>Laurel CARLSON, Lowell RHODES</i><br />
+</td>
+
+<td align="center">
+    <a href="/seminarContent/seminar2/papers/p_006_SMIAO.pdf" target="_blank"><img alt="pdf image" src="/static/images/large_pdf.gif" /></a>
+</td>
+<td align="center">&nbsp;
+
+</td>
+<td>
+    Short and Mid-Term Improvements to ATM Operations
+</td>
+</tr><tr>
+
+<td>7</td>
+<td>45</td>
+<td>
+    <strong>Terminal Routes UsingSpeed-control Techniques (TRUST). Initial Simulation Results</strong><br />
+    Author: <i>D.R BARKER, S.P. CHASE, S.C. MOHLEJI </i><br />
+</td>
+
+<td align="center">
+    <a href="/seminarContent/seminar2/papers/p_007_SMIAO.pdf" target="_blank"><img alt="pdf image" src="/static/images/large_pdf.gif" /></a>
+</td>
+<td align="center">&nbsp;
+
+</td>
+<td>
+    Short and Mid-Term Improvements to ATM Operations
+</td>
+</tr><tr>
+
+<td>8</td>
+<td>46</td>
+<td>
+    <strong>Operational Conceptfor a Departure Wake Vortex Monitoring System</strong><br />
+    Author: <i>Thimothy J. DASEY</i><br />
+</td>
+
+<td align="center">
+    <a href="/seminarContent/seminar2/papers/p_008_SMIAO.pdf" target="_blank"><img alt="pdf image" src="/static/images/large_pdf.gif" /></a>
+</td>
+<td align="center">&nbsp;
+
+</td>
+<td>
+    Short and Mid-Term Improvements to ATM Operations
+</td>
+</tr><tr>
+
+<td>9</td>
+<td>47</td>
+<td>
+    <strong>Air Traffic byStochastic Optimization</strong><br />
+    Author: <i>SofianeOUSSEDIK, mailto:delahaye@cmapx.polytechnique.fr, Daniel DELAHAYE</i><br />
+</td>
+
+<td align="center">
+    <a href="/seminarContent/seminar2/papers/p_009_SMIAO.pdf" target="_blank"><img alt="pdf image" src="/static/images/large_pdf.gif" /></a>
+</td>
+<td align="center">&nbsp;
+
+</td>
+<td>
+    Short and Mid-Term Improvements to ATM Operations
+</td>
+</tr><tr>
+
+<td>10</td>
+<td>48</td>
+<td>
+    <strong>Empirical Test ofConflict Probability Estimation</strong><br />
+    Author: <i>Russel A.PAIELLI</i><br />
+</td>
+
+<td align="center">
+    <a href="/seminarContent/seminar2/papers/p_010_SMIAO.pdf" target="_blank"><img alt="pdf image" src="/static/images/large_pdf.gif" /></a>
+</td>
+<td align="center">&nbsp;
+
+</td>
+<td>
+    Short and Mid-Term Improvements to ATM Operations
+</td>
+</tr><tr>
+
+<td>11</td>
+<td>49</td>
+<td>
+    <strong>Mantea DepartureSequencer: Increasing Airport Capacity by Planning Optimal Departure Sequences</strong><br />
+    Author: <i>Henk HESSELINK, Niels BASJES</i><br />
+</td>
+
+<td align="center">
+    <a href="/seminarContent/seminar2/papers/p_011_SMIAO.pdf" target="_blank"><img alt="pdf image" src="/static/images/large_pdf.gif" /></a>
+</td>
+<td align="center">&nbsp;
+
+</td>
+<td>
+    Short and Mid-Term Improvements to ATM Operations
+</td>
+</tr><tr>
+
+<td>12</td>
+<td>50</td>
+<td>
+    <strong>En Route ATM:Decision Support Tool Computer-Human Interface Requirements Development</strong><br />
+    Author: <i>Maria C. PICARDI</i><br />
+</td>
+
+<td align="center">
+    <a href="/seminarContent/seminar2/papers/p_012_SMIAO.pdf" target="_blank"><img alt="pdf image" src="/static/images/large_pdf.gif" /></a>
+</td>
+<td align="center">&nbsp;
+
+</td>
+<td>
+    Short and Mid-Term Improvements to ATM Operations
+</td>
+</tr><tr>
+
+<td>13</td>
+<td>51</td>
+<td>
+    <strong>Airspace Complexityand its application in Air Traffic Management</strong><br />
+    Author: <i>Banavar SRIDHAR, Kapil SHETH, Gano CHATTERJI</i><br />
+</td>
+
+<td align="center">
+    <a href="/seminarContent/seminar2/papers/p_013_SMIAO.pdf" target="_blank"><img alt="pdf image" src="/static/images/large_pdf.gif" /></a>
+</td>
+<td align="center">&nbsp;
+
+</td>
+<td>
+    Short and Mid-Term Improvements to ATM Operations
+</td>
+</tr><tr>
+
+<td>14</td>
+<td>52</td>
+<td>
+    <strong>Future Area ControlTools Support (FACTS)</strong><br />
+    Author: <i>Peter WHYSALL</i><br />
+</td>
+
+<td align="center">
+    <a href="/seminarContent/seminar2/papers/p_014_SMIAO.pdf" target="_blank"><img alt="pdf image" src="/static/images/large_pdf.gif" /></a>
+</td>
+<td align="center">&nbsp;
+
+</td>
+<td>
+    Short and Mid-Term Improvements to ATM Operations
+</td>
+</tr><tr>
+
+<td>15</td>
+<td>53</td>
+<td>
+    <strong>Final Approach SpacingTool (FAST)</strong><br />
+    Author: <i>Peter WHYSALL, Colin SMITH</i><br />
+</td>
+
+<td align="center">
+    <a href="/seminarContent/seminar2/papers/p_015_SMIAO.pdf" target="_blank"><img alt="pdf image" src="/static/images/large_pdf.gif" /></a>
+</td>
+<td align="center">&nbsp;
+
+</td>
+<td>
+    Short and Mid-Term Improvements to ATM Operations
+</td>
+</tr><tr>
+
+<td>16</td>
+<td>54</td>
+<td>
+    <strong>User RequestEvaluation Tool (URET) Interfacility Conflict Probe Performance Assessment</strong><br />
+    Author: <i>William ARTHUR, Michael P. McLAUGHLIN</i><br />
+</td>
+
+<td align="center">
+    <a href="/seminarContent/seminar2/papers/p_016_SMIAO.pdf" target="_blank"><img alt="pdf image" src="/static/images/large_pdf.gif" /></a>
+</td>
+<td align="center">&nbsp;
+
+</td>
+<td>
+    Short and Mid-Term Improvements to ATM Operations
+</td>
+</tr><tr>
+
+<td>17</td>
+<td>55</td>
+<td>
+    <strong>SupportingCollaboration in ATC through Flight Contracts</strong><br />
+    Author: <i>HélèneUNINSKI, Stéphane SIRE, Stéphane CHATTY</i><br />
+</td>
+
+<td align="center">
+    <a href="/seminarContent/seminar2/papers/p_017_SMIAO.pdf" target="_blank"><img alt="pdf image" src="/static/images/large_pdf.gif" /></a>
+</td>
+<td align="center">&nbsp;
+
+</td>
+<td>
+    Short and Mid-Term Improvements to ATM Operations
+</td>
+</tr><tr>
+
+<td>18</td>
+<td>56</td>
+<td>
+    <strong>Evaluating the economicimpacts of ATM Innovations on Commercial air Carrier Operations</strong><br />
+    Author: <i>Eric M.GAIER, Peter F. KOSTIUK</i><br />
+</td>
+
+<td align="center">
+    <a href="/seminarContent/seminar2/papers/p_018_APMMA.pdf" target="_blank"><img alt="pdf image" src="/static/images/large_pdf.gif" /></a>
+</td>
+<td align="center">&nbsp;
+
+</td>
+<td>
+    ATM Performance Measurement, Modelling, and Assessment
+</td>
+</tr><tr>
+
+<td>19</td>
+<td>57</td>
+<td>
+    <strong>An Integrated Safetyand Operational Analysis Methodology for Air Traffic Systems</strong><br />
+    Author: <i>Peter F. KOSTIUK, Stephan KOLITZ</i><br />
+</td>
+
+<td align="center">
+    <a href="/seminarContent/seminar2/papers/p_019_APMMA.pdf" target="_blank"><img alt="pdf image" src="/static/images/large_pdf.gif" /></a>
+</td>
+<td align="center">&nbsp;
+
+</td>
+<td>
+    ATM Performance Measurement, Modelling, and Assessment
+</td>
+</tr><tr>
+
+<td>20</td>
+<td>58</td>
+<td>
+    <strong>Using Inter-Process toExpand Modeling Capabilities</strong><br />
+    Author: <i>Diana LIANG, Steve BRADFORD, Stephane MONDOLONI</i><br />
+</td>
+
+<td align="center">
+    <a href="/seminarContent/seminar2/papers/p_020_APMMA.pdf" target="_blank"><img alt="pdf image" src="/static/images/large_pdf.gif" /></a>
+</td>
+<td align="center">&nbsp;
+
+</td>
+<td>
+    ATM Performance Measurement, Modelling, and Assessment
+</td>
+</tr><tr>
+
+<td>21</td>
+<td>59</td>
+<td>
+    <strong>CNS/ATM Enhancements inthe NAS: Potential Benefits to Users and the Environment</strong><br />
+    Author: <i>Diana LIANG, mailto:David.Chin@faa.dot.gov, Joe SMITH, Donna MIDDLETON</i><br />
+</td>
+
+<td align="center">
+    <a href="/seminarContent/seminar2/papers/p_021_APMMA.pdf" target="_blank"><img alt="pdf image" src="/static/images/large_pdf.gif" /></a>
+</td>
+<td align="center">&nbsp;
+
+</td>
+<td>
+    ATM Performance Measurement, Modelling, and Assessment
+</td>
+</tr><tr>
+
+<td>22</td>
+<td>60</td>
+<td>
+    <strong>Theeffect of Direct Routing on ATC Capacity</strong><br />
+    Author: <i>Adrian MAGILL</i><br />
+</td>
+
+<td align="center">
+    <a href="/seminarContent/seminar2/papers/p_022_APMMA.pdf" target="_blank"><img alt="pdf image" src="/static/images/large_pdf.gif" /></a>
+</td>
+<td align="center">&nbsp;
+
+</td>
+<td>
+    ATM Performance Measurement, Modelling, and Assessment
+</td>
+</tr><tr>
+
+<td>23</td>
+<td>61</td>
+<td>
+    <strong>Data Flow Analysis andOptimisation Potential from Gate-to-Gate</strong><br />
+    Author: <i>Matthias POPPE, Georg F. BOLZ</i><br />
+</td>
+
+<td align="center">
+    <a href="/seminarContent/seminar2/papers/p_023_APMMA.pdf" target="_blank"><img alt="pdf image" src="/static/images/large_pdf.gif" /></a>
+</td>
+<td align="center">&nbsp;
+
+</td>
+<td>
+    ATM Performance Measurement, Modelling, and Assessment
+</td>
+</tr><tr>
+
+<td>24</td>
+<td>62</td>
+<td>
+    <strong>Assessing Benefits forAirborne Flight Planners as Part of the Future NAS</strong><br />
+    Author: <i>HUGHES Monica, CRISP Vicki, LIANG Diana, Donna Middleton</i><br />
+</td>
+
+<td align="center">
+    <a href="/seminarContent/seminar2/papers/p_024_APMMA.pdf" target="_blank"><img alt="pdf image" src="/static/images/large_pdf.gif" /></a>
+</td>
+<td align="center">&nbsp;
+
+</td>
+<td>
+    ATM Performance Measurement, Modelling, and Assessment
+</td>
+</tr><tr>
+
+<td>25</td>
+<td>63</td>
+<td>
+    <strong>A Set of Approximateand Compatible Models for Airport Strategic Planning on Airside and on Landside</strong><br />
+    Author: <i>Luca RIGHI, Lorenzo BRUNETTA, Amadeo ODONI, Kostas ZOGRAFOS, Miltos STAMATOPOULOS</i><br />
+</td>
+
+<td align="center">
+    <a href="/seminarContent/seminar2/papers/p_025_APMMA.pdf" target="_blank"><img alt="pdf image" src="/static/images/large_pdf.gif" /></a>
+</td>
+<td align="center">&nbsp;
+
+</td>
+<td>
+    ATM Performance Measurement, Modelling, and Assessment
+</td>
+</tr><tr>
+
+<td>26</td>
+<td>64</td>
+<td>
+    <strong>The Initial PreferredIFR Route Restructuring Effort of the FAA</strong><br />
+    Author: <i>Laurence M.GORDON</i><br />
+</td>
+
+<td align="center">
+    <a href="/seminarContent/seminar2/papers/p_026_APMMA.pdf" target="_blank"><img alt="pdf image" src="/static/images/large_pdf.gif" /></a>
+</td>
+<td align="center">&nbsp;
+
+</td>
+<td>
+    ATM Performance Measurement, Modelling, and Assessment
+</td>
+</tr><tr>
+
+<td>27</td>
+<td>65</td>
+<td>
+    <strong>Conflict ProbeOperational Evaluation and Benefits Assessment</strong><br />
+    Author: <i>Karol KERNS, Alvin L. McFARLAND</i><br />
+</td>
+
+<td align="center">
+    <a href="/seminarContent/seminar2/papers/p_027_APMMA.pdf" target="_blank"><img alt="pdf image" src="/static/images/large_pdf.gif" /></a>
+</td>
+<td align="center">&nbsp;
+
+</td>
+<td>
+    ATM Performance Measurement, Modelling, and Assessment
+</td>
+</tr><tr>
+
+<td>28</td>
+<td>66</td>
+<td>
+    <strong>Sensitivity of SystemPerformance Metric to Changes in AFTM Operations</strong><br />
+    Author: <i>Lee BROWN, Michelle BLUCHER, Steve BRADFORD</i><br />
+</td>
+
+<td align="center">
+    <a href="/seminarContent/seminar2/papers/p_028_APMMA.pdf" target="_blank"><img alt="pdf image" src="/static/images/large_pdf.gif" /></a>
+</td>
+<td align="center">&nbsp;
+
+</td>
+<td>
+    ATM Performance Measurement, Modelling, and Assessment
+</td>
+</tr><tr>
+
+<td>29</td>
+<td>67</td>
+<td>
+    <strong>Impact of airTraffic Management on Airspace User Economic Performance</strong><br />
+    Author: <i>William K.MacReynolds, Joseph SINNOTT</i><br />
+</td>
+
+<td align="center">
+    <a href="/seminarContent/seminar2/papers/p_029_APMMA.pdf" target="_blank"><img alt="pdf image" src="/static/images/large_pdf.gif" /></a>
+</td>
+<td align="center">&nbsp;
+
+</td>
+<td>
+    ATM Performance Measurement, Modelling, and Assessment
+</td>
+</tr><tr>
+
+<td>30</td>
+<td>68</td>
+<td>
+    <strong>Capacity-RelatedBenefits of Proposed CNS/ATM Technologies</strong><br />
+    Author: <i>Tara J. WEIDNER</i><br />
+</td>
+
+<td align="center">
+    <a href="/seminarContent/seminar2/papers/p_030_APMMA.pdf" target="_blank"><img alt="pdf image" src="/static/images/large_pdf.gif" /></a>
+</td>
+<td align="center">&nbsp;
+
+</td>
+<td>
+    ATM Performance Measurement, Modelling, and Assessment
+</td>
+</tr><tr>
+
+<td>31</td>
+<td>69</td>
+<td>
+    <strong>Methods andMeasurements for Evaluation of ATM Tools in Real-Time Simulations and FieldTests</strong><br />
+    Author: <i>Fred SCHICK</i><br />
+</td>
+
+<td align="center">
+    <a href="/seminarContent/seminar2/papers/p_031_APMMA.pdf" target="_blank"><img alt="pdf image" src="/static/images/large_pdf.gif" /></a>
+</td>
+<td align="center">&nbsp;
+
+</td>
+<td>
+    ATM Performance Measurement, Modelling, and Assessment
+</td>
+</tr><tr>
+
+<td>32</td>
+<td>70</td>
+<td>
+    <strong>Application of GenericMetrics to Assess the Accuracy of Strategic Conflict Probes</strong><br />
+    Author: <i>Mary LeeCALE, Mike PAGLIONE, Robert OAKS, Dominic TIMOTEO</i><br />
+</td>
+
+<td align="center">
+    <a href="/seminarContent/seminar2/papers/p_032_APMMA.pdf" target="_blank"><img alt="pdf image" src="/static/images/large_pdf.gif" /></a>
+</td>
+<td align="center">&nbsp;
+
+</td>
+<td>
+    ATM Performance Measurement, Modelling, and Assessment
+</td>
+</tr><tr>
+
+<td>33</td>
+<td>71</td>
+<td>
+    <strong>National AirspaceCapacity Estimate</strong><br />
+    Author: <i>Alfred B.COCANOWER, William VOSS</i><br />
+</td>
+
+<td align="center">
+    <a href="/seminarContent/seminar2/papers/p_033_APMMA.pdf" target="_blank"><img alt="pdf image" src="/static/images/large_pdf.gif" /></a>
+</td>
+<td align="center">&nbsp;
+
+</td>
+<td>
+    ATM Performance Measurement, Modelling, and Assessment
+</td>
+</tr><tr>
+
+<td>34</td>
+<td>72</td>
+<td>
+    <strong>Modeling an AirlineOperations Control Center</strong><br />
+    Author: <i>Nicolas PUJET, Eric FERON</i><br />
+</td>
+
+<td align="center">
+    <a href="/seminarContent/seminar2/papers/p_034_APMMA.pdf" target="_blank"><img alt="pdf image" src="/static/images/large_pdf.gif" /></a>
+</td>
+<td align="center">&nbsp;
+
+</td>
+<td>
+    ATM Performance Measurement, Modelling, and Assessment
+</td>
+</tr><tr>
+
+<td>35</td>
+<td>73</td>
+<td>
+    <strong>A Probabilistic RiskAssessment based methodology to assess advanced ATM on safety</strong><br />
+    Author: <i>Henk BLOM, Peter BLANKER, Mariken EVERDIJ</i><br />
+</td>
+
+<td align="center">
+    <a href="/seminarContent/seminar2/papers/p_035_APMMA.pdf" target="_blank"><img alt="pdf image" src="/static/images/large_pdf.gif" /></a>
+</td>
+<td align="center">&nbsp;
+
+</td>
+<td>
+    ATM Performance Measurement, Modelling, and Assessment
+</td>
+</tr><tr>
+
+<td>36</td>
+<td>74</td>
+<td>
+    <strong>Growing Pains ofMajor European Airports Case Study: Amsterdam Airport Schiphol</strong><br />
+    Author: <i>Hans OFFERMAN, Marcel BAKKER</i><br />
+</td>
+
+<td align="center">
+    <a href="/seminarContent/seminar2/papers/p_036_APMMA.pdf" target="_blank"><img alt="pdf image" src="/static/images/large_pdf.gif" /></a>
+</td>
+<td align="center">&nbsp;
+
+</td>
+<td>
+    ATM Performance Measurement, Modelling, and Assessment
+</td>
+</tr><tr>
+
+<td>37</td>
+<td>75</td>
+<td>
+    <strong>ATM Performance Reviewin Europe</strong><br />
+    Author: <i>Xavier FRON</i><br />
+</td>
+
+<td align="center">
+    <a href="/seminarContent/seminar2/papers/p_037_APMMA.pdf" target="_blank"><img alt="pdf image" src="/static/images/large_pdf.gif" /></a>
+</td>
+<td align="center">&nbsp;
+
+</td>
+<td>
+    ATM Performance Measurement, Modelling, and Assessment
+</td>
+</tr><tr>
+
+<td>38</td>
+<td>76</td>
+<td>
+    <strong>PreliminaryEvaluation of Flight Delay Propagation Through an Airline Schedule</strong><br />
+    Author: <i>Roger BEATTY, Rose HSU, Lee BERRY, James ROME</i><br />
+</td>
+
+<td align="center">
+    <a href="/seminarContent/seminar2/papers/p_038_APMMA.pdf" target="_blank"><img alt="pdf image" src="/static/images/large_pdf.gif" /></a>
+</td>
+<td align="center">&nbsp;
+
+</td>
+<td>
+    ATM Performance Measurement, Modelling, and Assessment
+</td>
+</tr><tr>
+
+<td>39</td>
+<td>77</td>
+<td>
+    <strong>The Tactical Load Smoother Tool for Multi-Sector Planning</strong><br />
+    Author: <i>Colin MECKIFF, Jean-Pierre NICOLAON, Renaud CHONE</i><br />
+</td>
+
+<td align="center">
+    <a href="/seminarContent/seminar2/papers/p_040_FOC.pdf" target="_blank"><img alt="pdf image" src="/static/images/large_pdf.gif" /></a>
+</td>
+<td align="center">&nbsp;
+
+</td>
+<td>
+    Future Operational Concepts
+</td>
+</tr><tr>
+
+<td>40</td>
+<td>78</td>
+<td>
+    <strong>Investigation of Improved Information Distribution for the Realisation of Collaborative Decision Making</strong><br />
+    Author: <i>Peter MARTIN, Alison HUDGELL, Nicolas BOUGE, Sophie VIAL</i><br />
+</td>
+
+<td align="center">
+    <a href="/seminarContent/seminar2/papers/p_041_FOC.pdf" target="_blank"><img alt="pdf image" src="/static/images/large_pdf.gif" /></a>
+</td>
+<td align="center">&nbsp;
+
+</td>
+<td>
+    Future Operational Concepts
+</td>
+</tr><tr>
+
+<td>41</td>
+<td>79</td>
+<td>
+    <strong>ATC/Air Carrier Collaborative Arrival Planning: Data Sharing and User Preference Tools</strong><br />
+    Author: <i>Cheryl QUINN, Richard E. ZELENKA</i><br />
+</td>
+
+<td align="center">
+    <a href="/seminarContent/seminar2/papers/p_042_FOC.pdf" target="_blank"><img alt="pdf image" src="/static/images/large_pdf.gif" /></a>
+</td>
+<td align="center">&nbsp;
+
+</td>
+<td>
+    Future Operational Concepts
+</td>
+</tr><tr>
+
+<td>42</td>
+<td>80</td>
+<td>
+    <strong>European and USA Operational Concepts for 2000-2010: A Framework for Comparison</strong><br />
+    Author: <i>R.A. McCULLOCH</i><br />
+</td>
+
+<td align="center">
+    <a href="/seminarContent/seminar2/papers/p_043_FOC.pdf" target="_blank"><img alt="pdf image" src="/static/images/large_pdf.gif" /></a>
+</td>
+<td align="center">&nbsp;
+
+</td>
+<td>
+    Future Operational Concepts
+</td>
+</tr><tr>
+
+<td>43</td>
+<td>81</td>
+<td>
+    <strong>Air Traffic Management Capacity-Driven Operational Concept Through 2015</strong><br />
+    Author: <i>Aslaug HARALDSDOTTIR, Robert A. SCHWAB, Monica S. ALCABIN</i><br />
+</td>
+
+<td align="center">
+    <a href="/seminarContent/seminar2/papers/p_044_FOC.pdf" target="_blank"><img alt="pdf image" src="/static/images/large_pdf.gif" /></a>
+</td>
+<td align="center">&nbsp;
+
+</td>
+<td>
+    Future Operational Concepts
+</td>
+</tr><tr>
+
+<td>44</td>
+<td>82</td>
+<td>
+    <strong>FACES: a Free Flight Autonomous and Coordinate Embarked Solver</strong><br />
+    Author: <i>Jean-Marc ALLIOT, Nicolas DURAND, Géraud GRANGER</i><br />
+</td>
+
+<td align="center">
+    <a href="/seminarContent/seminar2/papers/p_045_FOC.pdf" target="_blank"><img alt="pdf image" src="/static/images/large_pdf.gif" /></a>
+</td>
+<td align="center">&nbsp;
+
+</td>
+<td>
+    Future Operational Concepts
+</td>
+</tr><tr>
+
+<td>45</td>
+<td>83</td>
+<td>
+    <strong>Achieving Early CDTI Capability with ADS-B</strong><br />
+    Author: <i>Andrew D. ZEITLIN, Jonathan HAMMER, James CIEPLAK, Oscar A. OLMOS</i><br />
+</td>
+
+<td align="center">
+    <a href="/seminarContent/seminar2/papers/p_046_FOC.pdf" target="_blank"><img alt="pdf image" src="/static/images/large_pdf.gif" /></a>
+</td>
+<td align="center">&nbsp;
+
+</td>
+<td>
+    Future Operational Concepts
+</td>
+</tr><tr>
+
+<td>46</td>
+<td>84</td>
+<td>
+    <strong>Operational Assessment of Co-operative ASAS Applications</strong><br />
+    Author: <i>Béatrice BONNEMAISON, Francis CASAUX, Thierry MIQUEL</i><br />
+</td>
+
+<td align="center">
+    <a href="/seminarContent/seminar2/papers/p_047_FOC.pdf" target="_blank"><img alt="pdf image" src="/static/images/large_pdf.gif" /></a>
+</td>
+<td align="center">&nbsp;
+
+</td>
+<td>
+    Future Operational Concepts
+</td>
+</tr><tr>
+
+<td>47</td>
+<td>85</td>
+<td>
+    <strong>On the Applicability of Free-Flight Mode in European Airspace</strong><br />
+    Author: <i>Pierre FAURE, Vu DUONG</i><br />
+</td>
+
+<td align="center">
+    <a href="/seminarContent/seminar2/papers/p_048_FOC.pdf" target="_blank"><img alt="pdf image" src="/static/images/large_pdf.gif" /></a>
+</td>
+<td align="center">&nbsp;
+
+</td>
+<td>
+    Future Operational Concepts
+</td>
+</tr><tr>
+
+<td>48</td>
+<td>86</td>
+<td>
+    <strong>Self-Separation from Air, Ground and Airline Perspective</strong><br />
+    Author: <i>R.C.J. RUIGROK, Sandra LOZITO</i><br />
+</td>
+
+<td align="center">
+    <a href="/seminarContent/seminar2/papers/p_049_FOC.pdf" target="_blank"><img alt="pdf image" src="/static/images/large_pdf.gif" /></a>
+</td>
+<td align="center">&nbsp;
+
+</td>
+<td>
+    Future Operational Concepts
+</td>
+</tr><tr>
+
+<td>49</td>
+<td>87</td>
+<td>
+    <strong>The Effect of Shared Information on Pilot /Controller situation Awareness and Re-Route Negotiation</strong><br />
+    Author: <i>John HANSMAN, Todd FARLEY, Mica ENDSLEY, Keith ADMONLIRDVIMAN, L. VIGEANT-LANGLOIS</i><br />
+</td>
+
+<td align="center">
+    <a href="/seminarContent/seminar2/papers/p_050_FOC.pdf" target="_blank"><img alt="pdf image" src="/static/images/large_pdf.gif" /></a>
+</td>
+<td align="center">&nbsp;
+
+</td>
+<td>
+    Future Operational Concepts
+</td>
+</tr><tr>
+
+<td>50</td>
+<td>88</td>
+<td>
+    <strong>Structuring Hazard Criteria for Automated Separation Assurance</strong><br />
+    Author: <i>Robert SIMPSON </i><br />
+</td>
+
+<td align="center">
+    <a href="/seminarContent/seminar2/papers/p_051_FOC.pdf" target="_blank"><img alt="pdf image" src="/static/images/large_pdf.gif" /></a>
+</td>
+<td align="center">&nbsp;
+
+</td>
+<td>
+    Future Operational Concepts
+</td>
+</tr><tr>
+
+<td>51</td>
+<td>89</td>
+<td>
+    <strong>The ESCAPADE Project (use of Downlinked Aircraft Parameters)</strong><br />
+    Author: <i>Bruno FAVENNEC, Pascal SALEMBIER</i><br />
+</td>
+
+<td align="center">
+    <a href="/seminarContent/seminar2/papers/p_052_FOC.pdf" target="_blank"><img alt="pdf image" src="/static/images/large_pdf.gif" /></a>
+</td>
+<td align="center">&nbsp;
+
+</td>
+<td>
+    Future Operational Concepts
+</td>
+</tr><tr>
+
+<td>52</td>
+<td>90</td>
+<td>
+    <strong>Observations of Departure Processes at Logan Airport to support the development of departure Planning Tools</strong><br />
+    Author: <i>Husni IDRIS, Bertrand DELCAIRE, William D. HALL, Ioannis ANAGNOSTAKIS, John R. HANSMAN, Amadeo R. ODONI, John-Paul CLARKE</i><br />
+</td>
+
+<td align="center">
+    <a href="/seminarContent/seminar2/papers/p_053_FOC.pdf" target="_blank"><img alt="pdf image" src="/static/images/large_pdf.gif" /></a>
+</td>
+<td align="center">&nbsp;
+
+</td>
+<td>
+    Future Operational Concepts
+</td>
+</tr>
+  </tbody>
+</table>
+
+
+        <!-- Footer -->
+        <footer>
+            <div class="row">
+                <div class="col-lg-12">
+                    <div class="container">
+                    <p>Copyright &copy; ATM Seminar 2018</p>
+                        </div>
+                </div>
+            </div>
+            <!-- /.row -->
+        </footer>
+
+    </div>
+    <!-- /.container -->
+
+    <!-- jQuery -->
+    <script src="../../static/js/jquery.js"></script>
+
+    <!-- Bootstrap Core JavaScript -->
+    <script src="../../static/js/bootstrap.min.js"></script>
+    
+        
+
+</body>
+    
+
+    
+</html>

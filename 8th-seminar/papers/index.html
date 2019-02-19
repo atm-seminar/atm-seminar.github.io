@@ -1,0 +1,1483 @@
+
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <link rel="icon" href="../../static/images/favicon.ico" style="width: 16px; height: 16px;" type="image/x-icon"/>
+    
+    <title>ATM Seminar</title>
+
+    <!-- Bootstrap Core CSS -->
+    <link href="../../static/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Custom CSS -->
+    <link href="../../static/css/business-frontpage.css" rel="stylesheet">
+
+    <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+        <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+        <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
+    
+    <!-- Google Tag Manager -->
+<script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+})(window,document,'script','dataLayer','GTM-59LG5P');</script>
+<!-- End Google Tag Manager -->
+    
+    <!-- Google anayltics tag. For pdf automation, the GA tag should be in the head above the automation tag -->
+    <script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+
+  ga('create', 'UA-85684740-1', 'auto');
+  ga('send', 'pageview');
+        
+        
+        //handles outbound click links as events
+        function handleOutboundLinkClicks(event) {
+  ga('send', 'event', {
+      eventCategory: '11th-seminar',
+      eventCategory: '10th-seminar',
+      eventCategory: '9th-seminar',
+      eventCategory: '8th-seminar',
+      eventCategory: '7th-seminar',
+      eventCategory: '6th-seminar',
+      eventCategory: '5th-seminar',
+      eventCategory: '4th-seminar',
+      eventCategory: '3rd-seminar',
+      eventCategory: '2nd-seminar',
+      eventCategory: '1st-seminar',
+    eventAction: 'pdf',
+    eventLabel: event.target.href,
+      transport: 'beacon'
+  });
+}
+
+</script><!--End GA tag -->
+    
+    
+    
+    
+
+<script type="text/javascript" src="/static/js/jquery.js"></script>
+
+<style>
+h2.trigger {
+	padding: 0 0 0 0px;
+	margin: 0 0 5px 0;
+	background: url() no-repeat;
+	height: 46px;
+	line-height: 46px;
+	width: 400px;
+	font-size: 13px;
+	font-weight: bold;
+	float: left;
+}
+h2.trigger a {
+	color: #00F;
+	text-decoration: none;
+}
+h2.trigger a:hover { color: #ccc; }
+h2.active {background-position: left bottom;} /*--When toggle is triggered, it will shift the image to the bottom to show its "opened" state--*/
+.toggle_container {
+	margin: 0 0 5px;
+	padding: 0;
+	border-top: 1px solid #d6d6d6;
+	background: #f0f0f0 url() repeat-y left top;
+	overflow: hidden;
+	font-size: 14px;
+	width: 100%;
+	clear: both;
+}
+.toggle_container .block {
+	padding: 20px; /*--Padding of Container--*/
+	background: url() no-repeat left bottom; /*--Bottom rounded corners--*/
+}
+	.papers {border-collapse: collapse}
+	.papers td{border-bottom:1px solid grey;}
+	.papers td:first-child {border-right:1px solid grey;}
+	.papers th{text-align:center; border-bottom:1px solid black; padding-bottom:10px}
+
+	.papers td { padding:5px;  }
+	.papers td img{margin:0px; padding:5px 0 0 0; }
+</style>
+
+<script>
+$(document).ready(function(){
+
+	//Hide (Collapse) the toggle containers on load
+	$(".toggle_container").hide();
+
+	//Switch the "Open" and "Close" state per click then slide up/down (depending on open/close state)
+	$("h2.trigger").click(function(){
+		$(this).toggleClass("active").next().slideToggle("slow");
+		return false; //Prevent the browser jump to the link anchor
+	});
+
+});
+</script>
+
+
+
+
+
+</head>
+
+<body style="padding: 0 !important;">
+    <!-- Google Tag Manager (noscript) -->
+<noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-59LG5P"
+height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+<!-- End Google Tag Manager (noscript) -->
+
+   
+    <!-- Image Background Page Header -->
+    <!-- Note: The background image is set within the business-casual.css file. -->
+    <header class="business-header" style="background-color: black; height: 180px;">
+        <div class="container">
+            <div class="row">
+                <div class="col-xs-6">
+                  <img style="margin-top: 25px; margin-bottom: 25px;" class="img-responsive" src="../../static/images/atm_title.png" />
+                </div>
+            </div>
+        </div>
+    </header>
+    
+    <!--70c384-->
+     <!-- Navigation --> <!--navbar-fixed-top-->
+    <nav class="navbar navbar-default" role="navigation" >
+        <div class="container">
+            <!-- Brand and toggle get grouped for better mobile display -->
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <a class="navbar-brand" href="../../">Home</a>
+            </div>
+            <!-- Collect the nav links, forms, and other content for toggling -->
+            <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+                <ul class="nav navbar-nav">
+
+                             
+                     
+                    <li>
+                        <a href="../../upcoming-seminar/">Upcoming Seminar</a>
+                    </li>
+                    <li>
+                        <a href="../../past-seminars/">Past Seminars</a>
+                    </li>
+                    <li>
+                        <a href="../../contact.cfm">Contact</a>
+                    </li>
+                    
+                    
+                   
+                    
+                </ul>
+                
+                	
+                
+                
+            </div>
+            <!-- /.navbar-collapse -->
+        </div>
+        <!-- /.container -->
+    </nav>
+
+
+    <!-- Page Content -->
+    <div class="container">
+
+        
+
+  <h2>8th Seminar Papers</h2>
+
+<div class="col-sm-12">
+
+
+<table class="table">
+  <thead class="thead-inverse">
+    <tr>
+      <th></th>
+      <th>Paper ID	</th>
+      <th>Title</th>
+      <th>Paper</th>
+      <th>Presentation</th>
+      <th>Theme</th>
+    </tr>
+  </thead>
+  <tbody>
+  <p>All papers and presentations can be downloaded and distributed free of charge. Please use the following publication reference: FAA/EUROCONTROL (Editors): Proceedings of the USA/FAA Air Traffic Management R&amp;D Seminar 2009. ISSN 2406-4068.</p>
+<tr>
+
+<td>1</td>
+<td>439</td>
+<td>
+    <strong>Airport Service Vehicle Scheduling</strong><br />
+    Author: <i>Kenneth Kuhn, Steffen Loth</i><br />
+</td>
+
+<td align="center">
+    <a href="/seminarContent/seminar8/papers/p_007_AO.pdf" target="_blank"><img alt="pdf image" src="/static/images/large_pdf.gif" /></a>
+</td>
+<td align="center">&nbsp;
+
+</td>
+<td>
+    Airport Operations
+</td>
+</tr><tr>
+
+<td>2</td>
+<td>440</td>
+<td>
+    <strong>Weather Forecast Accuracy: Study of Impact on Airport Capacity and Estimation of Avoidable Costs</strong><br />
+    Author: <i>Alexander Klein, Sadegh Kavoussi, Robert S. Lee</i><br />
+</td>
+
+<td align="center">
+    <a href="/seminarContent/seminar8/papers/p_008_W.pdf" target="_blank"><img alt="pdf image" src="/static/images/large_pdf.gif" /></a>
+</td>
+<td align="center">&nbsp;
+
+</td>
+<td>
+    Weather in ATM
+</td>
+</tr><tr>
+
+<td>3</td>
+<td>441</td>
+<td>
+    <strong>Airspace Encounter Models for Conventional and Unconventional Aircraft</strong><br />
+    Author: <i>Mykel Kochenderfer, Leo Espindle, Matthew Edwards, James Kuchar, Daniel Griffith</i><br />
+</td>
+
+<td align="center">
+    <a href="/seminarContent/seminar8/papers/p_012_IMSA.pdf" target="_blank"><img alt="pdf image" src="/static/images/large_pdf.gif" /></a>
+</td>
+<td align="center">&nbsp;
+
+</td>
+<td>
+    Innovative Methods for Safety Assessment
+</td>
+</tr><tr>
+
+<td>4</td>
+<td>442</td>
+<td>
+    <strong>Time-Based Arrival Management for Dual Threshold Operation and Continous Descent Approaches</strong><br />
+    Author: <i>Hartmut Helmke, Ronny Hann, Daniel Müller, Maria Uebbing-Rumke, Dennis Wittkowski</i><br />
+</td>
+
+<td align="center">
+    <a href="/seminarContent/seminar8/papers/p_014_CDA.pdf" target="_blank"><img alt="pdf image" src="/static/images/large_pdf.gif" /></a>
+</td>
+<td align="center">&nbsp;
+
+</td>
+<td>
+    Continuous Descent Approaches
+</td>
+</tr><tr>
+
+<td>5</td>
+<td>443</td>
+<td>
+    <strong>Regional GDP -- Extending Ground Delay Programs to Regional Airport Systems</strong><br />
+    Author: <i>Yu Zhang, Mark Hansen    </i><br />
+</td>
+
+<td align="center">
+    <a href="/seminarContent/seminar8/papers/p_015_IAC.pdf" target="_blank"><img alt="pdf image" src="/static/images/large_pdf.gif" /></a>
+</td>
+<td align="center">&nbsp;
+
+</td>
+<td>
+    Innovative ATM concepts
+</td>
+</tr><tr>
+
+<td>6</td>
+<td>444</td>
+<td>
+    <strong>Impact of future time-based operations on Situation Awareness of air traffic controllers</strong><br />
+    Author: <i>Esther Oprins, David Zwaaf, Fredrik Eriksson, Koen van de Merwe, Robert Roe</i><br />
+</td>
+
+<td align="center">
+    <a href="/seminarContent/seminar8/papers/p_016_HF.pdf" target="_blank"><img alt="pdf image" src="/static/images/large_pdf.gif" /></a>
+</td>
+<td align="center">&nbsp;
+
+</td>
+<td>
+    Human Factors
+</td>
+</tr><tr>
+
+<td>7</td>
+<td>445</td>
+<td>
+    <strong>Modeling Flight Delays and Cancellations at the National, Regional and Airport Levels in the United States</strong><br />
+    Author: <i>Banavar Sridhar, Yao Wang, Alexander Klein, Richard Jehlen</i><br />
+</td>
+
+<td align="center">
+    <a href="/seminarContent/seminar8/papers/p_017_APMM.pdf" target="_blank"><img alt="pdf image" src="/static/images/large_pdf.gif" /></a>
+</td>
+<td align="center">&nbsp;
+
+</td>
+<td>
+    ATM Performance Measurement and Management
+</td>
+</tr><tr>
+
+<td>8</td>
+<td>446</td>
+<td>
+    <strong>A systems-engineering approach to assessing the safety of the SESAR Operational Concept</strong><br />
+    Author: <i>Eric Perrin, Derek Fowler, Ron Pierce</i><br />
+</td>
+
+<td align="center">
+    <a href="/seminarContent/seminar8/papers/p_019_IMSA.pdf" target="_blank"><img alt="pdf image" src="/static/images/large_pdf.gif" /></a>
+</td>
+<td align="center">&nbsp;
+
+</td>
+<td>
+    Innovative Methods for Safety Assessment
+</td>
+</tr><tr>
+
+<td>9</td>
+<td>447</td>
+<td>
+    <strong>DEVELOPING A SAFETY CULTURE MEASUREMENT TOOLKIT (SCMT) FOR EUROPEAN ANSPS</strong><br />
+    Author: <i>Kathryn Mearns, Barry Kirwan, Richard Kennedy</i><br />
+</td>
+
+<td align="center">
+    <a href="/seminarContent/seminar8/papers/p_021_HF.pdf" target="_blank"><img alt="pdf image" src="/static/images/large_pdf.gif" /></a>
+</td>
+<td align="center">&nbsp;
+
+</td>
+<td>
+    Human Factors
+</td>
+</tr><tr>
+
+<td>10</td>
+<td>448</td>
+<td>
+    <strong>Carbon Copy: The Benefits of Autonomous Cognitive Models of Air Traffic Controllers in Large-Scale Simulations</strong><br />
+    Author: <i>Steven Estes, Craig Bonaceto, Kevin Long, Scott Mills, Frank Sogandares</i><br />
+</td>
+
+<td align="center">
+    <a href="/seminarContent/seminar8/papers/p_027_HF.pdf" target="_blank"><img alt="pdf image" src="/static/images/large_pdf.gif" /></a>
+</td>
+<td align="center">&nbsp;
+
+</td>
+<td>
+    Human Factors
+</td>
+</tr><tr>
+
+<td>11</td>
+<td>449</td>
+<td>
+    <strong>METHODOLOGY FOR ESTIMATION OF BENEFITS OF HUMAN-FACTORS ENGINEERING IN NEXTGEN/SESAR DEVELOPMENT</strong><br />
+    Author: <i>Lance Sherry, Jerome Lard, Karl Fennell, Michael Feary</i><br />
+</td>
+
+<td align="center">
+    <a href="/seminarContent/seminar8/papers/p_028_HF.pdf" target="_blank"><img alt="pdf image" src="/static/images/large_pdf.gif" /></a>
+</td>
+<td align="center">&nbsp;
+
+</td>
+<td>
+    Human Factors
+</td>
+</tr><tr>
+
+<td>12</td>
+<td>450</td>
+<td>
+    <strong>Departure Scheduling in a Multi-airport System</strong><br />
+    Author: <i>Yanjun Wang, Minghua Hu, Dong Sui, Yong Tian, Jianming Zhan</i><br />
+</td>
+
+<td align="center">
+    <a href="/seminarContent/seminar8/papers/p_030_TQM.pdf" target="_blank"><img alt="pdf image" src="/static/images/large_pdf.gif" /></a>
+</td>
+<td align="center">&nbsp;
+
+</td>
+<td>
+    Trajectory and Queue Management
+</td>
+</tr><tr>
+
+<td>13</td>
+<td>451</td>
+<td>
+    <strong>Hybrid Demand and Capacity Balance Model for the Future Air Traffic Management Concept of Operations</strong><br />
+    Author: <i>Juan José Rebollo, Andrés Cruz   </i><br />
+</td>
+
+<td align="center">
+    <a href="/seminarContent/seminar8/papers/p_033_NSTFO.pdf" target="_blank"><img alt="pdf image" src="/static/images/large_pdf.gif" /></a>
+</td>
+<td align="center">&nbsp;
+
+</td>
+<td>
+    Network and Strategic Traffic Flow Optimization
+</td>
+</tr><tr>
+
+<td>14</td>
+<td>452</td>
+<td>
+    <strong>Flight Deck-Based Merging and Spacing during En Route Descent: Findings from an Air Traffic Controller Simulation</strong><br />
+    Author: <i>William Penhallegon, Randall Bone</i><br />
+</td>
+
+<td align="center">
+    <a href="/seminarContent/seminar8/papers/p_037_CDA.pdf" target="_blank"><img alt="pdf image" src="/static/images/large_pdf.gif" /></a>
+</td>
+<td align="center">&nbsp;
+
+</td>
+<td>
+    Continuous Descent Approaches
+</td>
+</tr><tr>
+
+<td>15</td>
+<td>453</td>
+<td>
+    <strong>Use of Linear Aircraft Intent Response for Tactical Trajectory-Based Operations</strong><br />
+    Author: <i>Stephane Mondoloni</i><br />
+</td>
+
+<td align="center">
+    <a href="/seminarContent/seminar8/papers/p_038_TQM.pdf" target="_blank"><img alt="pdf image" src="/static/images/large_pdf.gif" /></a>
+</td>
+<td align="center">&nbsp;
+
+</td>
+<td>
+    Trajectory and Queue Management
+</td>
+</tr><tr>
+
+<td>16</td>
+<td>454</td>
+<td>
+    <strong>Evaluation of ATC working practice from a safety and human factor perpective</strong><br />
+    Author: <i>Karim Mehadhebi, Philippe Averty, Jean-Louis Pirat</i><br />
+</td>
+
+<td align="center">
+    <a href="/seminarContent/seminar8/papers/p_041_HF.pdf" target="_blank"><img alt="pdf image" src="/static/images/large_pdf.gif" /></a>
+</td>
+<td align="center">&nbsp;
+
+</td>
+<td>
+    Human Factors
+</td>
+</tr><tr>
+
+<td>17</td>
+<td>455</td>
+<td>
+    <strong>Evaluating the Environmental Performance of the U.S. Next Generation Air Transportation System</strong><br />
+    Author: <i>Michael Graham, Terence Thompson, Michael Marcolini, Jeremiah Creedon</i><br />
+</td>
+
+<td align="center">
+    <a href="/seminarContent/seminar8/papers/p_043_EI.pdf" target="_blank"><img alt="pdf image" src="/static/images/large_pdf.gif" /></a>
+</td>
+<td align="center">&nbsp;
+
+</td>
+<td>
+    Environmental Impacts in ATM System Design and Operation
+</td>
+</tr><tr>
+
+<td>18</td>
+<td>456</td>
+<td>
+    <strong>Integrating optimization and simulation to gain more efficient airport logistics</strong><br />
+    Author: <i>Tobias Andersson Granberg, Anna Norin, Peter Värbrand, Di Yuan</i><br />
+</td>
+
+<td align="center">
+    <a href="/seminarContent/seminar8/papers/p_044_AO.pdf" target="_blank"><img alt="pdf image" src="/static/images/large_pdf.gif" /></a>
+</td>
+<td align="center">&nbsp;
+
+</td>
+<td>
+    Airport Operations
+</td>
+</tr><tr>
+
+<td>19</td>
+<td>457</td>
+<td>
+    <strong>Fuel consumption modeling in support of ATM environmental decision-making</strong><br />
+    Author: <i>David Senzig, Gregg Fleming, Ralph Iovinelli</i><br />
+</td>
+
+<td align="center">
+    <a href="/seminarContent/seminar8/papers/p_048_EI.pdf" target="_blank"><img alt="pdf image" src="/static/images/large_pdf.gif" /></a>
+</td>
+<td align="center">&nbsp;
+
+</td>
+<td>
+    Environmental Impacts in ATM System Design and Operation
+</td>
+</tr><tr>
+
+<td>20</td>
+<td>458</td>
+<td>
+    <strong>Ant Colony Optimization for Air Traffic Conflict Resolution</strong><br />
+    Author: <i>Nicolas Durand, Jean-Marc Alliot</i><br />
+</td>
+
+<td align="center">
+    <a href="/seminarContent/seminar8/papers/p_052_IAC.pdf" target="_blank"><img alt="pdf image" src="/static/images/large_pdf.gif" /></a>
+</td>
+<td align="center">&nbsp;
+
+</td>
+<td>
+    Innovative ATM concepts
+</td>
+</tr><tr>
+
+<td>21</td>
+<td>459</td>
+<td>
+    <strong>Nicolas Durand, Jean-Marc Alliot</strong><br />
+    Author: <i>Eduardo GOÑI MODREGO, Mihai-George IAGARU, Marc DALICHAMPT, Roger LANE</i><br />
+</td>
+
+<td align="center">
+    <a href="/seminarContent/seminar8/papers/p_055_NSTFO.pdf" target="_blank"><img alt="pdf image" src="/static/images/large_pdf.gif" /></a>
+</td>
+<td align="center">&nbsp;
+
+</td>
+<td>
+    Network and Strategic Traffic Flow Optimization
+</td>
+</tr><tr>
+
+<td>22</td>
+<td>460</td>
+<td>
+    <strong>Near-Term Terminal Area Automation for Arrival Coordination</strong><br />
+    Author: <i>Jeffrey Shepley</i><br />
+</td>
+
+<td align="center">
+    <a href="/seminarContent/seminar8/papers/p_059_IAC.pdf" target="_blank"><img alt="pdf image" src="/static/images/large_pdf.gif" /></a>
+</td>
+<td align="center">&nbsp;
+
+</td>
+<td>
+    Innovative ATM concepts
+</td>
+</tr><tr>
+
+<td>23</td>
+<td>461</td>
+<td>
+    <strong>Feasibility and Benefits of a Cockpit Traffic Display-based Seperation Procedure for Single Runway Arrivals and Departures</strong><br />
+    Author: <i>Dr. Anand M. Mundra, David A. Domino, John R Helleberg, Arthur P. Smith</i><br />
+</td>
+
+<td align="center">
+    <a href="/seminarContent/seminar8/papers/p_061_CDA.pdf" target="_blank"><img alt="pdf image" src="/static/images/large_pdf.gif" /></a>
+</td>
+<td align="center">&nbsp;
+
+</td>
+<td>
+    Continuous Descent Approaches
+</td>
+</tr><tr>
+
+<td>24</td>
+<td>462</td>
+<td>
+    <strong>Controlled Time-of-Arrival Flight Trials</strong><br />
+    Author: <i>Joel K. Klooster & Ana Del Amo, Patrick Manzi</i><br />
+</td>
+
+<td align="center">
+    <a href="/seminarContent/seminar8/papers/p_064_CDA.pdf" target="_blank"><img alt="pdf image" src="/static/images/large_pdf.gif" /></a>
+</td>
+<td align="center">&nbsp;
+
+</td>
+<td>
+    Continuous Descent Approaches
+</td>
+</tr><tr>
+
+<td>25</td>
+<td>463</td>
+<td>
+    <strong>SmartNodes – Towards supporting time-critical decision-making in Aviation Security</strong><br />
+    Author: <i>Rainer Kölle, Alex Tarter</i><br />
+</td>
+
+<td align="center">
+    <a href="/seminarContent/seminar8/papers/p_067_IAC.pdf" target="_blank"><img alt="pdf image" src="/static/images/large_pdf.gif" /></a>
+</td>
+<td align="center">&nbsp;
+
+</td>
+<td>
+    Innovative ATM concepts
+</td>
+</tr><tr>
+
+<td>26</td>
+<td>464</td>
+<td>
+    <strong>MEASUREMENT OF THE QUALITY OF TRAFFIC ORIENTATION SCHEMES REGARDING FLIGHT PLAN EFFICIENCY</strong><br />
+    Author: <i>Dipl.-Ing. Marcus Hantschke, Dipl.-Met. Urban Weißhaar</i><br />
+</td>
+
+<td align="center">
+    <a href="/seminarContent/seminar8/papers/p_073_APMM.pdf" target="_blank"><img alt="pdf image" src="/static/images/large_pdf.gif" /></a>
+</td>
+<td align="center">&nbsp;
+
+</td>
+<td>
+    ATM Performance Measurement and Management
+</td>
+</tr><tr>
+
+<td>27</td>
+<td>465</td>
+<td>
+    <strong>The Impact of Severe Weather on Sector Capacity</strong><br />
+    Author: <i>Lixia Song, Daniel Greenbaum, Craig Wanke</i><br />
+</td>
+
+<td align="center">
+    <a href="/seminarContent/seminar8/papers/p_075_W.pdf" target="_blank"><img alt="pdf image" src="/static/images/large_pdf.gif" /></a>
+</td>
+<td align="center">&nbsp;
+
+</td>
+<td>
+    Weather in ATM
+</td>
+</tr><tr>
+
+<td>28</td>
+<td>466</td>
+<td>
+    <strong>Application of Reinforcement Learning Algorithms for Predicting Taxi-out Times</strong><br />
+    Author: <i>Poornima Balakrishna, Ph.D. Candidate, Rajesh Ganesan,Ph.D., Lance Sherry, Ph.D.</i><br />
+</td>
+
+<td align="center">
+    <a href="/seminarContent/seminar8/papers/p_079_AO.pdf" target="_blank"><img alt="pdf image" src="/static/images/large_pdf.gif" /></a>
+</td>
+<td align="center">&nbsp;
+
+</td>
+<td>
+    Airport Operations
+</td>
+</tr><tr>
+
+<td>29</td>
+<td>467</td>
+<td>
+    <strong>Airport surface management and runways scheduling</strong><br />
+    Author: <i>Raphael Deau, Jean-Baptiste Gotteland, Nicolas Durand</i><br />
+</td>
+
+<td align="center">
+    <a href="/seminarContent/seminar8/papers/p_081_AO.pdf" target="_blank"><img alt="pdf image" src="/static/images/large_pdf.gif" /></a>
+</td>
+<td align="center">&nbsp;
+
+</td>
+<td>
+    Airport Operations
+</td>
+</tr><tr>
+
+<td>30</td>
+<td>468</td>
+<td>
+    <strong>Longitudinal Study of New York Airports Prices, Delays, Cancellations, Markets Served and Aircraft Gauge</strong><br />
+    Author: <i>John Ferguson; Karla Hoffman; Lance Sherry; Abdul Qadar Kara; Guillermo Calderon</i><br />
+</td>
+
+<td align="center">
+    <a href="/seminarContent/seminar8/papers/p_082_FP.pdf" target="_blank"><img alt="pdf image" src="/static/images/large_pdf.gif" /></a>
+</td>
+<td align="center">&nbsp;
+
+</td>
+<td>
+    Finance and Policy
+</td>
+</tr><tr>
+
+<td>31</td>
+<td>469</td>
+<td>
+    <strong>Assessment of the Aviation Environmental Design Tool</strong><br />
+    Author: <i>George Noel, Doug Allaire, Stuart Jacobson, Karen Willcox</i><br />
+</td>
+
+<td align="center">
+    <a href="/seminarContent/seminar8/papers/p_084_EI.pdf" target="_blank"><img alt="pdf image" src="/static/images/large_pdf.gif" /></a>
+</td>
+<td align="center">&nbsp;
+
+</td>
+<td>
+    Environmental Impacts in ATM System Design and Operation
+</td>
+</tr><tr>
+
+<td>32</td>
+<td>470</td>
+<td>
+    <strong>A Comparison of Algorithm Generated Sectorizations</strong><br />
+    Author: <i>Shannon Zelinski</i><br />
+</td>
+
+<td align="center">
+    <a href="/seminarContent/seminar8/papers/p_085_DACM.pdf" target="_blank"><img alt="pdf image" src="/static/images/large_pdf.gif" /></a>
+</td>
+<td align="center">&nbsp;
+
+</td>
+<td>
+    Dynamic Airspace and Capacity Management
+</td>
+</tr><tr>
+
+<td>33</td>
+<td>471</td>
+<td>
+    <strong>A Market Mechanism to Assign Air Traffic Flow Management Slots</strong><br />
+    Author: <i>Andrea Ranieri, Lorenzo Castelli</i><br />
+</td>
+
+<td align="center">
+    <a href="/seminarContent/seminar8/papers/p_086_FP.pdf" target="_blank"><img alt="pdf image" src="/static/images/large_pdf.gif" /></a>
+</td>
+<td align="center">&nbsp;
+
+</td>
+<td>
+    Finance and Policy
+</td>
+</tr><tr>
+
+<td>34</td>
+<td>472</td>
+<td>
+    <strong>Feasibility of Mixed Equipage Operations in the Same Airspace</strong><br />
+    Author: <i>Parimal Kopardekar, Nancy Smith, Katharine Lee, Arwa Aweiss, Paul U. Lee, Thomas Prevot, Joey Mercer, Jeff Homola, Matthew Mainini</i><br />
+</td>
+
+<td align="center">
+    <a href="/seminarContent/seminar8/papers/p_089_DACM.pdf" target="_blank"><img alt="pdf image" src="/static/images/large_pdf.gif" /></a>
+</td>
+<td align="center">&nbsp;
+
+</td>
+<td>
+    Dynamic Airspace and Capacity Management
+</td>
+</tr><tr>
+
+<td>35</td>
+<td>473</td>
+<td>
+    <strong>Improvement of thunderstorm hazard information for pilots through a ground based weather information and management system</strong><br />
+    Author: <i>A. Tafferner, C. Forster, S. Sénési, Y. Guillou</i><br />
+</td>
+
+<td align="center">
+    <a href="/seminarContent/seminar8/papers/p_091_W.pdf" target="_blank"><img alt="pdf image" src="/static/images/large_pdf.gif" /></a>
+</td>
+<td align="center">&nbsp;
+
+</td>
+<td>
+    Weather in ATM
+</td>
+</tr><tr>
+
+<td>36</td>
+<td>474</td>
+<td>
+    <strong>Evaluation of an Airborne Spacing Concept to Support Continuous Descent Arrival Operations</strong><br />
+    Author: <i>Jennifer L. Murdoch, Bryan E. Barmore, Brian T. Baxley, Terence S. Abbott</i><br />
+</td>
+
+<td align="center">
+    <a href="/seminarContent/seminar8/papers/p_092_CDA.pdf" target="_blank"><img alt="pdf image" src="/static/images/large_pdf.gif" /></a>
+</td>
+<td align="center">&nbsp;
+
+</td>
+<td>
+    Continuous Descent Approaches
+</td>
+</tr><tr>
+
+<td>37</td>
+<td>475</td>
+<td>
+    <strong>Separation Minima Model: How Changes in Contributing Factors Could Affect Current Standards</strong><br />
+    Author: <i>Daniel MOSQUERA-BENITEZ, Alan Ross GROSKREUTZ, Lars FUCKE</i><br />
+</td>
+
+<td align="center">
+    <a href="/seminarContent/seminar8/papers/p_094_SP.pdf" target="_blank"><img alt="pdf image" src="/static/images/large_pdf.gif" /></a>
+</td>
+<td align="center">&nbsp;
+
+</td>
+<td>
+    Separation
+</td>
+</tr><tr>
+
+<td>38</td>
+<td>476</td>
+<td>
+    <strong>Resource Allocation in Flow-Constrained Areas with Stochastic Termination Times Considering Both Optimistic and Pessimistic Reroutes</strong><br />
+    Author: <i>Moein Ganji, David Lovell, Michael O. Ball</i><br />
+</td>
+
+<td align="center">
+    <a href="/seminarContent/seminar8/papers/p_097_NSTFO.pdf" target="_blank"><img alt="pdf image" src="/static/images/large_pdf.gif" /></a>
+</td>
+<td align="center">&nbsp;
+
+</td>
+<td>
+    Network and Strategic Traffic Flow Optimization
+</td>
+</tr><tr>
+
+<td>39</td>
+<td>477</td>
+<td>
+    <strong>The Route Availability Planning Tool (RAPT): Evaluation of Departure Management Decision Support in New York during the 2008 Convective Weather Season</strong><br />
+    Author: <i>Michael Robinson, Rich DeLaura, Ngaire Underhill</i><br />
+</td>
+
+<td align="center">
+    <a href="/seminarContent/seminar8/papers/p_099_W.pdf" target="_blank"><img alt="pdf image" src="/static/images/large_pdf.gif" /></a>
+</td>
+<td align="center">&nbsp;
+
+</td>
+<td>
+    Weather in ATM
+</td>
+</tr><tr>
+
+<td>40</td>
+<td>478</td>
+<td>
+    <strong>Distributed Trajectory Flexibility Preservation for Traffic Complexity Mitigation</strong><br />
+    Author: <i>Husni Idris, Daniel Delahaye, David Wing</i><br />
+</td>
+
+<td align="center">
+    <a href="/seminarContent/seminar8/papers/p_101_TQM.pdf" target="_blank"><img alt="pdf image" src="/static/images/large_pdf.gif" /></a>
+</td>
+<td align="center">&nbsp;
+
+</td>
+<td>
+    Trajectory and Queue Management
+</td>
+</tr><tr>
+
+<td>41</td>
+<td>479</td>
+<td>
+    <strong>Management of ATM performance in operational concept development and validation: a case study</strong><br />
+    Author: <i>Jelmer J. Scholte, Henk A.P. Blom, J.C. (Hans) van den Bos, Roy B.H.J. Jansen</i><br />
+</td>
+
+<td align="center">
+    <a href="/seminarContent/seminar8/papers/p_102_APMM.pdf" target="_blank"><img alt="pdf image" src="/static/images/large_pdf.gif" /></a>
+</td>
+<td align="center">&nbsp;
+
+</td>
+<td>
+    ATM Performance Measurement and Management
+</td>
+</tr><tr>
+
+<td>42</td>
+<td>480</td>
+<td>
+    <strong>An efficient airspace configuration forecast</strong><br />
+    Author: <i>D. Gianazza, C. Allignol, N. Saporito</i><br />
+</td>
+
+<td align="center">
+    <a href="/seminarContent/seminar8/papers/p_105_DACM.pdf" target="_blank"><img alt="pdf image" src="/static/images/large_pdf.gif" /></a>
+</td>
+<td align="center">&nbsp;
+
+</td>
+<td>
+    Dynamic Airspace and Capacity Management
+</td>
+</tr><tr>
+
+<td>43</td>
+<td>481</td>
+<td>
+    <strong>Evaluation of Triple Closely Spaced Parallel Runway Procedures for Off-nominal Cases</strong><br />
+    Author: <i>Savita Verma, Sandra Lozito, Deborah Ballinger, Thomas Kozon, Ramesh Panda, Diane Carpenter, Darrell Wooten, G. Hardy, Herb Resnick</i><br />
+</td>
+
+<td align="center">
+    <a href="/seminarContent/seminar8/papers/p_110_IAC.pdf" target="_blank"><img alt="pdf image" src="/static/images/large_pdf.gif" /></a>
+</td>
+<td align="center">&nbsp;
+
+</td>
+<td>
+    Innovative ATM concepts
+</td>
+</tr><tr>
+
+<td>44</td>
+<td>482</td>
+<td>
+    <strong>Human Factors Assessment of Runway Status Lights and Final Approach Runway Occupancy Signal</strong><br />
+    Author: <i>Maria Picardi Kuffner, Captain Robert Perkins</i><br />
+</td>
+
+<td align="center">
+    <a href="/seminarContent/seminar8/papers/p_114_HF.pdf" target="_blank"><img alt="pdf image" src="/static/images/large_pdf.gif" /></a>
+</td>
+<td align="center">&nbsp;
+
+</td>
+<td>
+    Human Factors
+</td>
+</tr><tr>
+
+<td>45</td>
+<td>483</td>
+<td>
+    <strong>US/ Europe comparison of ATM-related operational performance</strong><br />
+    Author: <i>John Gulding, David Knorr, Marc Rose, James Bonn, Philippe Enaud, Holger Hegendoerfer</i><br />
+</td>
+
+<td align="center">
+    <a href="/seminarContent/seminar8/papers/p_115_APMM.pdf" target="_blank"><img alt="pdf image" src="/static/images/large_pdf.gif" /></a>
+</td>
+<td align="center">&nbsp;
+
+</td>
+<td>
+    ATM Performance Measurement and Management
+</td>
+</tr><tr>
+
+<td>46</td>
+<td>484</td>
+<td>
+    <strong>Scheduling Aircraft Landings to Closely Spaced Parallel Runways</strong><br />
+    Author: <i>Michael Kupfer</i><br />
+</td>
+
+<td align="center">
+    <a href="/seminarContent/seminar8/papers/p_116_AO.pdf" target="_blank"><img alt="pdf image" src="/static/images/large_pdf.gif" /></a>
+</td>
+<td align="center">&nbsp;
+
+</td>
+<td>
+    Airport Operations
+</td>
+</tr><tr>
+
+<td>47</td>
+<td>485</td>
+<td>
+    <strong>Validation of Runway Capacity Models</strong><br />
+    Author: <i>Amy Kim, Mark Hansen</i><br />
+</td>
+
+<td align="center">
+    <a href="/seminarContent/seminar8/papers/p_121_APMM.pdf" target="_blank"><img alt="pdf image" src="/static/images/large_pdf.gif" /></a>
+</td>
+<td align="center">&nbsp;
+
+</td>
+<td>
+    ATM Performance Measurement and Management
+</td>
+</tr><tr>
+
+<td>48</td>
+<td>486</td>
+<td>
+    <strong>Development of Flight Inefficiency Metrics for Environmental Performance Assessment of ATM</strong><br />
+    Author: <i>Tom G. Reynolds</i><br />
+</td>
+
+<td align="center">
+    <a href="/seminarContent/seminar8/papers/p_122_EI.pdf" target="_blank"><img alt="pdf image" src="/static/images/large_pdf.gif" /></a>
+</td>
+<td align="center">&nbsp;
+
+</td>
+<td>
+    Environmental Impacts in ATM System Design and Operation
+</td>
+</tr><tr>
+
+<td>49</td>
+<td>487</td>
+<td>
+    <strong>Identification of Robust Routes using Convective Weather Forecasts</strong><br />
+    Author: <i>Diana Michalek, Hamsa Balakrishnan</i><br />
+</td>
+
+<td align="center">
+    <a href="/seminarContent/seminar8/papers/p_124_W.pdf" target="_blank"><img alt="pdf image" src="/static/images/large_pdf.gif" /></a>
+</td>
+<td align="center">&nbsp;
+
+</td>
+<td>
+    Weather in ATM
+</td>
+</tr><tr>
+
+<td>50</td>
+<td>488</td>
+<td>
+    <strong>A Model for Determining Ground Delay Program Parameters Using a Probabilistic Forecast of Stratus Clearing</strong><br />
+    Author: <i>Lara S. Cook, Bryan Wood</i><br />
+</td>
+
+<td align="center">
+    <a href="/seminarContent/seminar8/papers/p_125_W.pdf" target="_blank"><img alt="pdf image" src="/static/images/large_pdf.gif" /></a>
+</td>
+<td align="center">&nbsp;
+
+</td>
+<td>
+    Weather in ATM
+</td>
+</tr><tr>
+
+<td>51</td>
+<td>489</td>
+<td>
+    <strong>Bet on both sides of the coin to improve the organizational climate</strong><br />
+    Author: <i>Johan Jönsson, Marcus Arvidsson & Curt R Johansson</i><br />
+</td>
+
+<td align="center">
+    <a href="/seminarContent/seminar8/papers/p_126_HF.pdf" target="_blank"><img alt="pdf image" src="/static/images/large_pdf.gif" /></a>
+</td>
+<td align="center">&nbsp;
+
+</td>
+<td>
+    Human Factors
+</td>
+</tr><tr>
+
+<td>52</td>
+<td>490</td>
+<td>
+    <strong>Optimizing Airspace Sectors for Varying Demand Patterns using Multi-Controller Staffing</strong><br />
+    Author: <i>Shin-Lai (Alex) Tien, Robert Hoffman, Ph.D.</i><br />
+</td>
+
+<td align="center">
+    <a href="/seminarContent/seminar8/papers/p_128_DACM.pdf" target="_blank"><img alt="pdf image" src="/static/images/large_pdf.gif" /></a>
+</td>
+<td align="center">&nbsp;
+
+</td>
+<td>
+    Dynamic Airspace and Capacity Management
+</td>
+</tr><tr>
+
+<td>53</td>
+<td>491</td>
+<td>
+    <strong>Risk-Benefit Analysis of Advanced Air Transportation System Technologies Using Logic Gate Models</strong><br />
+    Author: <i>S. Eisenhawer, T. Bott,J. Foggia, S. Brown, K. Neitzke, M. Sorokach</i><br />
+</td>
+
+<td align="center">
+    <a href="/seminarContent/seminar8/papers/p_130_IMSA.pdf" target="_blank"><img alt="pdf image" src="/static/images/large_pdf.gif" /></a>
+</td>
+<td align="center">&nbsp;
+
+</td>
+<td>
+    Innovative Methods for Safety Assessment
+</td>
+</tr><tr>
+
+<td>54</td>
+<td>492</td>
+<td>
+    <strong>Analysis of Continuous Descent Benefits and Impacts During Daytime Operations</strong><br />
+    Author: <i>Sanjiv Shresta, Dejan Neskovic, Stephen S. Williams</i><br />
+</td>
+
+<td align="center">
+    <a href="/seminarContent/seminar8/papers/p_132_CDA.pdf" target="_blank"><img alt="pdf image" src="/static/images/large_pdf.gif" /></a>
+</td>
+<td align="center">&nbsp;
+
+</td>
+<td>
+    Continuous Descent Approaches
+</td>
+</tr><tr>
+
+<td>55</td>
+<td>493</td>
+<td>
+    <strong>Equitable Allocation of Enroute Airspace Resources</strong><br />
+    Author: <i>Nasim Vakili Pourtaklo, Michael Ball</i><br />
+</td>
+
+<td align="center">
+    <a href="/seminarContent/seminar8/papers/p_134_NSTFO.pdf" target="_blank"><img alt="pdf image" src="/static/images/large_pdf.gif" /></a>
+</td>
+<td align="center">&nbsp;
+
+</td>
+<td>
+    Network and Strategic Traffic Flow Optimization
+</td>
+</tr><tr>
+
+<td>56</td>
+<td>494</td>
+<td>
+    <strong>Initial Evaluation of NextGen Air/Ground Operations with Ground-Based Automated Separation Assurance</strong><br />
+    Author: <i>Thomas Prevot, Jeffrey Homola, Joey Mercer, Matt Mainini, Christopher Cabrall</i><br />
+</td>
+
+<td align="center">
+    <a href="/seminarContent/seminar8/papers/p_138_SP.pdf" target="_blank"><img alt="pdf image" src="/static/images/large_pdf.gif" /></a>
+</td>
+<td align="center">&nbsp;
+
+</td>
+<td>
+    Separation
+</td>
+</tr><tr>
+
+<td>57</td>
+<td>495</td>
+<td>
+    <strong>Lateral Intent Error’s Impact on Aircraft Prediction</strong><br />
+    Author: <i>Mike Paglione, Greg McDonald, Ibrahim Bayraktutar, Jesper Bronsvoort</i><br />
+</td>
+
+<td align="center">
+    <a href="/seminarContent/seminar8/papers/p_141_TQM.pdf" target="_blank"><img alt="pdf image" src="/static/images/large_pdf.gif" /></a>
+</td>
+<td align="center">&nbsp;
+
+</td>
+<td>
+    Trajectory and Queue Management
+</td>
+</tr><tr>
+
+<td>58</td>
+<td>496</td>
+<td>
+    <strong>4D-Trajectory Deconfliction Through Departure Time Adjustment</strong><br />
+    Author: <i>Nicolas BARNIER, Cyril ALLIGNOL</i><br />
+</td>
+
+<td align="center">
+    <a href="/seminarContent/seminar8/papers/p_143_NSTFO.pdf" target="_blank"><img alt="pdf image" src="/static/images/large_pdf.gif" /></a>
+</td>
+<td align="center">&nbsp;
+
+</td>
+<td>
+    Network and Strategic Traffic Flow Optimization
+</td>
+</tr><tr>
+
+<td>59</td>
+<td>497</td>
+<td>
+    <strong>Linking Traffic Management to the Airport Surface</strong><br />
+    Author: <i>Nathan A. Doble, John Timmerman, Ted Carniol, Mark Klopfenstein, Midori Tanino, Ved Sud</i><br />
+</td>
+
+<td align="center">
+    <a href="/seminarContent/seminar8/papers/p_145_AO.pdf" target="_blank"><img alt="pdf image" src="/static/images/large_pdf.gif" /></a>
+</td>
+<td align="center">&nbsp;
+
+</td>
+<td>
+    Airport Operations
+</td>
+</tr><tr>
+
+<td>60</td>
+<td>498</td>
+<td>
+    <strong>ERASMUS Strategic Deconfliction to Benefit SESAR</strong><br />
+    Author: <i>Fabrice Drogoul, Philippe Averty, Rosa Weber</i><br />
+</td>
+
+<td align="center">
+    <a href="/seminarContent/seminar8/papers/p_146_IAC.pdf" target="_blank"><img alt="pdf image" src="/static/images/large_pdf.gif" /></a>
+</td>
+<td align="center">&nbsp;
+
+</td>
+<td>
+    Innovative ATM concepts
+</td>
+</tr><tr>
+
+<td>61</td>
+<td>499</td>
+<td>
+    <strong>Air Traffic Flow Management in the Presence of Uncertainty</strong><br />
+    Author: <i>John-Paul B. Clarke, Senay Solak</i><br />
+</td>
+
+<td align="center">
+    <a href="/seminarContent/seminar8/papers/p_147_NSTFO.pdf" target="_blank"><img alt="pdf image" src="/static/images/large_pdf.gif" /></a>
+</td>
+<td align="center">&nbsp;
+
+</td>
+<td>
+    Network and Strategic Traffic Flow Optimization
+</td>
+</tr><tr>
+
+<td>62</td>
+<td>500</td>
+<td>
+    <strong>Estimation of Separation Buffers for Wind-Prediction Error in an Airborne Separation Assistance System</strong><br />
+    Author: <i>Maria Consiglio, Sherwood Hoadley, B. Danette Allen</i><br />
+</td>
+
+<td align="center">
+    <a href="/seminarContent/seminar8/papers/p_148_SP.pdf" target="_blank"><img alt="pdf image" src="/static/images/large_pdf.gif" /></a>
+</td>
+<td align="center">&nbsp;
+
+</td>
+<td>
+    Separation
+</td>
+</tr><tr>
+
+<td>63</td>
+<td>501</td>
+<td>
+    <strong>The Area Flow Multi-Sector Planner: A Fast-Time Study of MSP Coordination Activities</strong><br />
+    Author: <i>Carolyn Sorensen, Ian Crook, Diana Liang, Richard Jehlen</i><br />
+</td>
+
+<td align="center">
+    <a href="/seminarContent/seminar8/papers/p_149_NSTFO.pdf" target="_blank"><img alt="pdf image" src="/static/images/large_pdf.gif" /></a>
+</td>
+<td align="center">&nbsp;
+
+</td>
+<td>
+    Network and Strategic Traffic Flow Optimization
+</td>
+</tr><tr>
+
+<td>64</td>
+<td>502</td>
+<td>
+    <strong>Use of Queuing Models to Estimate Delay Savings from 4D Trajectory Precision</strong><br />
+    Author: <i>Mark Hansen, Tasos Nikoleris, David Lovell, Kleoniki Vlachou</i><br />
+</td>
+
+<td align="center">
+    <a href="/seminarContent/seminar8/papers/p_151_TQM.pdf" target="_blank"><img alt="pdf image" src="/static/images/large_pdf.gif" /></a>
+</td>
+<td align="center">&nbsp;
+
+</td>
+<td>
+    Trajectory and Queue Management
+</td>
+</tr><tr>
+
+<td>65</td>
+<td>503</td>
+<td>
+    <strong>Evaluating a New Formulation for Large-Scale Traffic Flow Management</strong><br />
+    Author: <i>Andrew M. Churchill, David J. Lovell, Michael O. Ball</i><br />
+</td>
+
+<td align="center">
+    <a href="/seminarContent/seminar8/papers/p_152_NSTFO.pdf" target="_blank"><img alt="pdf image" src="/static/images/large_pdf.gif" /></a>
+</td>
+<td align="center">&nbsp;
+
+</td>
+<td>
+    Network and Strategic Traffic Flow Optimization
+</td>
+</tr><tr>
+
+<td>66</td>
+<td>504</td>
+<td>
+    <strong>Delay Impacts onto Turnaround Performance</strong><br />
+    Author: <i>Hartmut Fricke, Michael Schultz</i><br />
+</td>
+
+<td align="center">
+    <a href="/seminarContent/seminar8/papers/p_153_AO.pdf" target="_blank"><img alt="pdf image" src="/static/images/large_pdf.gif" /></a>
+</td>
+<td align="center">&nbsp;
+
+</td>
+<td>
+    Airport Operations
+</td>
+</tr><tr>
+
+<td>67</td>
+<td>505</td>
+<td>
+    <strong>Assessing the Role of Operating, Passenger, and Infrastructure Costs in Fleet Planning under Fuel Price Uncertainty</strong><br />
+    Author: <i>Megan Smirti, Mark Hansen</i><br />
+</td>
+
+<td align="center">
+    <a href="/seminarContent/seminar8/papers/p_155_FP.pdf" target="_blank"><img alt="pdf image" src="/static/images/large_pdf.gif" /></a>
+</td>
+<td align="center">&nbsp;
+
+</td>
+<td>
+    Finance and Policy
+</td>
+</tr><tr>
+
+<td>68</td>
+<td>506</td>
+<td>
+    <strong>Progress on Joint FAA/Eurocontrol Effort to Develop an ICAO Wake Turbulence Re-Categorization</strong><br />
+    Author: <i>Steven R. Lang, Jeffrey A. Tittsworth, Donald P. Delisi, David Y. Lai, Catalin Lepadatu, George C. Greene</i><br />
+</td>
+
+<td align="center">
+    <a href="/seminarContent/seminar8/papers/p_158_SP.pdf" target="_blank"><img alt="pdf image" src="/static/images/large_pdf.gif" /></a>
+</td>
+<td align="center">&nbsp;
+
+</td>
+<td>
+    Separation
+</td>
+</tr>
+  </tbody>
+</table>
+
+
+        <!-- Footer -->
+        <footer>
+            <div class="row">
+                <div class="col-lg-12">
+                    <div class="container">
+                    <p>Copyright &copy; ATM Seminar 2018</p>
+                        </div>
+                </div>
+            </div>
+            <!-- /.row -->
+        </footer>
+
+    </div>
+    <!-- /.container -->
+
+    <!-- jQuery -->
+    <script src="../../static/js/jquery.js"></script>
+
+    <!-- Bootstrap Core JavaScript -->
+    <script src="../../static/js/bootstrap.min.js"></script>
+    
+        
+
+</body>
+    
+
+    
+</html>

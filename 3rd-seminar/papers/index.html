@@ -1,0 +1,1411 @@
+
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <link rel="icon" href="../../static/images/favicon.ico" style="width: 16px; height: 16px;" type="image/x-icon"/>
+    
+    <title>ATM Seminar</title>
+
+    <!-- Bootstrap Core CSS -->
+    <link href="../../static/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Custom CSS -->
+    <link href="../../static/css/business-frontpage.css" rel="stylesheet">
+
+    <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+        <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+        <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
+    
+    <!-- Google Tag Manager -->
+<script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+})(window,document,'script','dataLayer','GTM-59LG5P');</script>
+<!-- End Google Tag Manager -->
+    
+    <!-- Google anayltics tag. For pdf automation, the GA tag should be in the head above the automation tag -->
+    <script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+
+  ga('create', 'UA-85684740-1', 'auto');
+  ga('send', 'pageview');
+        
+        
+        //handles outbound click links as events
+        function handleOutboundLinkClicks(event) {
+  ga('send', 'event', {
+      eventCategory: '11th-seminar',
+      eventCategory: '10th-seminar',
+      eventCategory: '9th-seminar',
+      eventCategory: '8th-seminar',
+      eventCategory: '7th-seminar',
+      eventCategory: '6th-seminar',
+      eventCategory: '5th-seminar',
+      eventCategory: '4th-seminar',
+      eventCategory: '3rd-seminar',
+      eventCategory: '2nd-seminar',
+      eventCategory: '1st-seminar',
+    eventAction: 'pdf',
+    eventLabel: event.target.href,
+      transport: 'beacon'
+  });
+}
+
+</script><!--End GA tag -->
+    
+    
+    
+    
+
+<script type="text/javascript" src="/static/js/jquery.js"></script>
+
+<style>
+h2.trigger {
+	padding: 0 0 0 0px;
+	margin: 0 0 5px 0;
+	background: url() no-repeat;
+	height: 46px;
+	line-height: 46px;
+	width: 400px;
+	font-size: 13px;
+	font-weight: bold;
+	float: left;
+}
+h2.trigger a {
+	color: #00F;
+	text-decoration: none;
+}
+h2.trigger a:hover { color: #ccc; }
+h2.active {background-position: left bottom;} /*--When toggle is triggered, it will shift the image to the bottom to show its "opened" state--*/
+.toggle_container {
+	margin: 0 0 5px;
+	padding: 0;
+	border-top: 1px solid #d6d6d6;
+	background: #f0f0f0 url() repeat-y left top;
+	overflow: hidden;
+	font-size: 14px;
+	width: 100%;
+	clear: both;
+}
+.toggle_container .block {
+	padding: 20px; /*--Padding of Container--*/
+	background: url() no-repeat left bottom; /*--Bottom rounded corners--*/
+}
+	.papers {border-collapse: collapse}
+	.papers td{border-bottom:1px solid grey;}
+	.papers td:first-child {border-right:1px solid grey;}
+	.papers th{text-align:center; border-bottom:1px solid black; padding-bottom:10px}
+
+	.papers td { padding:5px;  }
+	.papers td img{margin:0px; padding:5px 0 0 0; }
+</style>
+
+<script>
+$(document).ready(function(){
+
+	//Hide (Collapse) the toggle containers on load
+	$(".toggle_container").hide();
+
+	//Switch the "Open" and "Close" state per click then slide up/down (depending on open/close state)
+	$("h2.trigger").click(function(){
+		$(this).toggleClass("active").next().slideToggle("slow");
+		return false; //Prevent the browser jump to the link anchor
+	});
+
+});
+</script>
+
+
+
+
+
+</head>
+
+<body style="padding: 0 !important;">
+    <!-- Google Tag Manager (noscript) -->
+<noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-59LG5P"
+height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+<!-- End Google Tag Manager (noscript) -->
+
+   
+    <!-- Image Background Page Header -->
+    <!-- Note: The background image is set within the business-casual.css file. -->
+    <header class="business-header" style="background-color: black; height: 180px;">
+        <div class="container">
+            <div class="row">
+                <div class="col-xs-6">
+                  <img style="margin-top: 25px; margin-bottom: 25px;" class="img-responsive" src="../../static/images/atm_title.png" />
+                </div>
+            </div>
+        </div>
+    </header>
+    
+    <!--70c384-->
+     <!-- Navigation --> <!--navbar-fixed-top-->
+    <nav class="navbar navbar-default" role="navigation" >
+        <div class="container">
+            <!-- Brand and toggle get grouped for better mobile display -->
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <a class="navbar-brand" href="../../">Home</a>
+            </div>
+            <!-- Collect the nav links, forms, and other content for toggling -->
+            <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+                <ul class="nav navbar-nav">
+
+                             
+                     
+                    <li>
+                        <a href="../../upcoming-seminar/">Upcoming Seminar</a>
+                    </li>
+                    <li>
+                        <a href="../../past-seminars/">Past Seminars</a>
+                    </li>
+                    <li>
+                        <a href="../../contact.cfm">Contact</a>
+                    </li>
+                    
+                    
+                   
+                    
+                </ul>
+                
+                	
+                
+                
+            </div>
+            <!-- /.navbar-collapse -->
+        </div>
+        <!-- /.container -->
+    </nav>
+
+
+    <!-- Page Content -->
+    <div class="container">
+
+        
+
+  <h2>2nd Seminar Papers</h2>
+
+<div class="col-sm-12">
+
+
+<table class="table">
+  <thead class="thead-inverse">
+    <tr>
+      <th></th>
+      <th>Paper ID	</th>
+      <th>Title</th>
+      <th>Paper</th>
+      <th>Presentation</th>
+      <th>Theme</th>
+    </tr>
+  </thead>
+  <tbody>
+  <p>All papers and presentations can be downloaded and distributed free of charge. Please use the following publication reference: FAA/EUROCONTROL (Editors): Proceedings of the USA/FAA Air Traffic Management R&amp;D Seminar 2000. ISSN 2406-4068.</p>
+<tr>
+
+<td>1</td>
+<td>91</td>
+<td>
+    <strong>Reducing the Impact of Noise Abatement Strategies on Airport Capacity by Forecasting Noise</strong><br />
+    Author: <i>Robert D. Sharman, Art Shantz</i><br />
+</td>
+
+<td align="center">
+    <a href="/seminarContent/seminar3/papers/p_003_AGOADM.pdf" target="_blank"><img alt="pdf image" src="/static/images/large_pdf.gif" /></a>
+</td>
+<td align="center">&nbsp;
+
+</td>
+<td>
+    Airport, Ground Operations, Arrival and Departure Management
+</td>
+</tr><tr>
+
+<td>2</td>
+<td>92</td>
+<td>
+    <strong>IPv6 and Internet Technology for the Aeronautical Telecommunication Network. A New Networking Approach</strong><br />
+    Author: <i>Phil Smith, Laurent Crouzard, Gilles Gawinowski, Ollivier Robert </i><br />
+</td>
+
+<td align="center">
+    <a href="/seminarContent/seminar3/papers/p_005_ASA.pdf" target="_blank"><img alt="pdf image" src="/static/images/large_pdf.gif" /></a>
+</td>
+<td align="center">&nbsp;
+
+</td>
+<td>
+    Airborne Separation Assurance
+</td>
+</tr><tr>
+
+<td>3</td>
+<td>93</td>
+<td>
+    <strong>Air Traffic Complexity : towards Intrinsic Metrics</strong><br />
+    Author: <i>Daniel Delahaye, Stphane Puechmorel</i><br />
+</td>
+
+<td align="center">
+    <a href="/seminarContent/seminar3/papers/p_012_AMSMP.pdf" target="_blank"><img alt="pdf image" src="/static/images/large_pdf.gif" /></a>
+</td>
+<td align="center">&nbsp;
+
+</td>
+<td>
+    Airspace Management, System Metrics and Policy
+</td>
+</tr><tr>
+
+<td>4</td>
+<td>94</td>
+<td>
+    <strong>A Human Factors Evaluation of Active Final Approach Spacing Tool Concepts</strong><br />
+    Author: <i>Cheryl Quinn, John E. Robinson</i><br />
+</td>
+
+<td align="center">
+    <a href="/seminarContent/seminar3/papers/p_013_HFIHMI.pdf" target="_blank"><img alt="pdf image" src="/static/images/large_pdf.gif" /></a>
+</td>
+<td align="center">&nbsp;
+
+</td>
+<td>
+    Human Factor Issues, Human-Machine Interfaces
+</td>
+</tr><tr>
+
+<td>5</td>
+<td>95</td>
+<td>
+    <strong>An Airspace Planning Model for Selecting Flight-Plans under Workload, Safety and Equity Considerations</strong><br />
+    Author: <i>Hanif D. Sherali, J. Cole Smith, Antonio A.Trani</i><br />
+</td>
+
+<td align="center">
+    <a href="/seminarContent/seminar3/papers/p_014_AMSMP.pdf" target="_blank"><img alt="pdf image" src="/static/images/large_pdf.gif" /></a>
+</td>
+<td align="center">&nbsp;
+
+</td>
+<td>
+    Airspace Management, System Metrics and Policy
+</td>
+</tr><tr>
+
+<td>6</td>
+<td>96</td>
+<td>
+    <strong>Collaborative Optimization of Airport Arrival and Departure Traffic Flow Management Strategies for CDM</strong><br />
+    Author: <i>Eugene Gilbo, Kenneth W. Howard</i><br />
+</td>
+
+<td align="center">
+    <a href="/seminarContent/seminar3/papers/p_018_DSTCDM.pdf" target="_blank"><img alt="pdf image" src="/static/images/large_pdf.gif" /></a>
+</td>
+<td align="center">&nbsp;
+
+</td>
+<td>
+    Decision Support Tools and Collaborative Decision Making
+</td>
+</tr><tr>
+
+<td>7</td>
+<td>97</td>
+<td>
+    <strong>The Effect of Shared Information on Pilot/Controller and Controller/ Controller Interactions</strong><br />
+    Author: <i>R. John Hansman, Hayley J. Davison</i><br />
+</td>
+
+<td align="center">
+    <a href="/seminarContent/seminar3/papers/p_019_HFIHMI.pdf" target="_blank"><img alt="pdf image" src="/static/images/large_pdf.gif" /></a>
+</td>
+<td align="center">&nbsp;
+
+</td>
+<td>
+    Human Factor Issues, Human-Machine Interfaces
+</td>
+</tr><tr>
+
+<td>8</td>
+<td>98</td>
+<td>
+    <strong>Assessing the Benefits of Collaborative Decision Making in Air Traffic Management</strong><br />
+    Author: <i>Michael O. Ball, Robert L. Hoffman, Dave Knorr, James Wetherly, Mike Wambsganss</i><br />
+</td>
+
+<td align="center">
+    <a href="/seminarContent/seminar3/papers/p_020_AMSMP.pdf" target="_blank"><img alt="pdf image" src="/static/images/large_pdf.gif" /></a>
+</td>
+<td align="center">&nbsp;
+
+</td>
+<td>
+    Airspace Management, System Metrics and Policy
+</td>
+</tr><tr>
+
+<td>9</td>
+<td>99</td>
+<td>
+    <strong>Pricing Policies for Air Traffic Assignment</strong><br />
+    Author: <i>Jean-Loup Farges, Karine Deschinkel, Daniel Delahaye</i><br />
+</td>
+
+<td align="center">
+    <a href="/seminarContent/seminar3/papers/p_021_AMSMP.pdf" target="_blank"><img alt="pdf image" src="/static/images/large_pdf.gif" /></a>
+</td>
+<td align="center">&nbsp;
+
+</td>
+<td>
+    Airspace Management, System Metrics and Policy
+</td>
+</tr><tr>
+
+<td>10</td>
+<td>100</td>
+<td>
+    <strong>Managing Criticality of ASAS Applications</strong><br />
+    Author: <i>Batrice Bonnemaison, Andrew Zeitlin</i><br />
+</td>
+
+<td align="center">
+    <a href="/seminarContent/seminar3/papers/p_022_SSS.pdf" target="_blank"><img alt="pdf image" src="/static/images/large_pdf.gif" /></a>
+</td>
+<td align="center">&nbsp;
+
+</td>
+<td>
+    Safety and Separation Standards
+</td>
+</tr><tr>
+
+<td>11</td>
+<td>101</td>
+<td>
+    <strong>Co-operative Optimal Conflict Avoidance in Free Flight Airspace</strong><br />
+    Author: <i>Miguel A. Vilaplana, Colin Goodchild, Stefano Elefante</i><br />
+</td>
+
+<td align="center">
+    <a href="/seminarContent/seminar3/papers/p_023_ASA.pdf" target="_blank"><img alt="pdf image" src="/static/images/large_pdf.gif" /></a>
+</td>
+<td align="center">&nbsp;
+
+</td>
+<td>
+    Airborne Separation Assurance
+</td>
+</tr><tr>
+
+<td>12</td>
+<td>102</td>
+<td>
+    <strong>Human Factors in ATC Alarms and Notifications Design: an Experimental Evaluation</strong><br />
+    Author: <i>Sylvie Athenes, Stphane Chatty, Alexandre Bustico</i><br />
+</td>
+
+<td align="center">
+    <a href="/seminarContent/seminar3/papers/p_026_HFIHMI.pdf" target="_blank"><img alt="pdf image" src="/static/images/large_pdf.gif" /></a>
+</td>
+<td align="center">&nbsp;
+
+</td>
+<td>
+    Human Factor Issues, Human-Machine Interfaces
+</td>
+</tr><tr>
+
+<td>13</td>
+<td>103</td>
+<td>
+    <strong>Restriction Relaxation Experiments Enabled by URET, a Strategic Planning Tool</strong><br />
+    Author: <i>Michael Burski, Joseph Celio</i><br />
+</td>
+
+<td align="center">
+    <a href="/seminarContent/seminar3/papers/p_027_DSTCDM.pdf" target="_blank"><img alt="pdf image" src="/static/images/large_pdf.gif" /></a>
+</td>
+<td align="center">&nbsp;
+
+</td>
+<td>
+    Decision Support Tools and Collaborative Decision Making
+</td>
+</tr><tr>
+
+<td>14</td>
+<td>104</td>
+<td>
+    <strong>FACET: Future ATM Concepts Evaluation Tool</strong><br />
+    Author: <i>Karl Bilimoria, Banavar Sridhar, Gano Chatterji, Kapil Sheth, Shon Grabbe</i><br />
+</td>
+
+<td align="center">
+    <a href="/seminarContent/seminar3/papers/p_028_AMSMP.pdf" target="_blank"><img alt="pdf image" src="/static/images/large_pdf.gif" /></a>
+</td>
+<td align="center">&nbsp;
+
+</td>
+<td>
+    Airspace Management, System Metrics and Policy
+</td>
+</tr><tr>
+
+<td>15</td>
+<td>105</td>
+<td>
+    <strong>Reliability Analysis of Air Traffic Control</strong><br />
+    Author: <i>Sven Ternov</i><br />
+</td>
+
+<td align="center">
+    <a href="/seminarContent/seminar3/papers/p_029_SSS.pdf" target="_blank"><img alt="pdf image" src="/static/images/large_pdf.gif" /></a>
+</td>
+<td align="center">&nbsp;
+
+</td>
+<td>
+    Safety and Separation Standards
+</td>
+</tr><tr>
+
+<td>16</td>
+<td>106</td>
+<td>
+    <strong>En route Spacing Tool: Efficient Conflict-free Spacing to Flow-Restricted Airspace</strong><br />
+    Author: <i>Steve Green</i><br />
+</td>
+
+<td align="center">
+    <a href="/seminarContent/seminar3/papers/p_030_DSTCDM.pdf" target="_blank"><img alt="pdf image" src="/static/images/large_pdf.gif" /></a>
+</td>
+<td align="center">&nbsp;
+
+</td>
+<td>
+    Decision Support Tools and Collaborative Decision Making
+</td>
+</tr><tr>
+
+<td>17</td>
+<td>107</td>
+<td>
+    <strong>Modeling ATM Automation, Metering Conformance Benefits</strong><br />
+    Author: <i>Steve Green, Tara J. Weidner</i><br />
+</td>
+
+<td align="center">
+    <a href="/seminarContent/seminar3/papers/p_031_AMSMP.pdf" target="_blank"><img alt="pdf image" src="/static/images/large_pdf.gif" /></a>
+</td>
+<td align="center">&nbsp;
+
+</td>
+<td>
+    Airspace Management, System Metrics and Policy
+</td>
+</tr><tr>
+
+<td>18</td>
+<td>108</td>
+<td>
+    <strong>UNITED STATES and EUROPEAN Airport Capacity Assessment using the GMU Macroscopic Capacity Model (MCM)</strong><br />
+    Author: <i>George Donohue, William D. Laska</i><br />
+</td>
+
+<td align="center">
+    <a href="/seminarContent/seminar3/papers/p_033_AMSMP.pdf" target="_blank"><img alt="pdf image" src="/static/images/large_pdf.gif" /></a>
+</td>
+<td align="center">&nbsp;
+
+</td>
+<td>
+    Airspace Management, System Metrics and Policy
+</td>
+</tr><tr>
+
+<td>19</td>
+<td>109</td>
+<td>
+    <strong>Building and Evaluating a Minimal Regulation Scheme</strong><br />
+    Author: <i>Jean-Baptiste Gotteland, P. Kerlirzin, Serge Manchon, C. Plusquellec</i><br />
+</td>
+
+<td align="center">
+    <a href="/seminarContent/seminar3/papers/p_035_AMSMP.pdf" target="_blank"><img alt="pdf image" src="/static/images/large_pdf.gif" /></a>
+</td>
+<td align="center">&nbsp;
+
+</td>
+<td>
+    Airspace Management, System Metrics and Policy
+</td>
+</tr><tr>
+
+<td>20</td>
+<td>110</td>
+<td>
+    <strong>Interactions: Advanced Controller Displays, an ATM essential</strong><br />
+    Author: <i>Ernst Kesseler, Ed Knapen</i><br />
+</td>
+
+<td align="center">
+    <a href="/seminarContent/seminar3/papers/p_036_HFIHMI.pdf" target="_blank"><img alt="pdf image" src="/static/images/large_pdf.gif" /></a>
+</td>
+<td align="center">&nbsp;
+
+</td>
+<td>
+    Human Factor Issues, Human-Machine Interfaces
+</td>
+</tr><tr>
+
+<td>21</td>
+<td>111</td>
+<td>
+    <strong>Free Flight in a Crowded Airspace?</strong><br />
+    Author: <i>Jacco Hoekstra, R.C.J. Ruigrok, R.N.H.W. van Gent</i><br />
+</td>
+
+<td align="center">
+    <a href="/seminarContent/seminar3/papers/p_037_ASA.pdf" target="_blank"><img alt="pdf image" src="/static/images/large_pdf.gif" /></a>
+</td>
+<td align="center">&nbsp;
+
+</td>
+<td>
+    Airborne Separation Assurance
+</td>
+</tr><tr>
+
+<td>22</td>
+<td>112</td>
+<td>
+    <strong>Advanced Decision Aids for Air Traffic Controllers: Understanding Different Working Methods from a Cognitive Point of View</strong><br />
+    Author: <i>Marie Christine Bressolle, R. Benhacene, N. Boudes, R. Parise</i><br />
+</td>
+
+<td align="center">
+    <a href="/seminarContent/seminar3/papers/p_039_DSTCDM.pdf" target="_blank"><img alt="pdf image" src="/static/images/large_pdf.gif" /></a>
+</td>
+<td align="center">&nbsp;
+
+</td>
+<td>
+    Decision Support Tools and Collaborative Decision Making
+</td>
+</tr><tr>
+
+<td>23</td>
+<td>113</td>
+<td>
+    <strong>Airspace Design and Arrival/Departure Planning For Brussels National Airport</strong><br />
+    Author: <i>Satish C. Mohleji, Ferdinand Jacobs</i><br />
+</td>
+
+<td align="center">
+    <a href="/seminarContent/seminar3/papers/p_044_AGOADM.pdf" target="_blank"><img alt="pdf image" src="/static/images/large_pdf.gif" /></a>
+</td>
+<td align="center">&nbsp;
+
+</td>
+<td>
+    Airport, Ground Operations, Arrival and Departure Management
+</td>
+</tr><tr>
+
+<td>24</td>
+<td>114</td>
+<td>
+    <strong>Analytical Identification of Airport and Airspace Capacity Constraints</strong><br />
+    Author: <i>Joe Hoffman, William Voss</i><br />
+</td>
+
+<td align="center">
+    <a href="/seminarContent/seminar3/papers/p_045_AMSMP.pdf" target="_blank"><img alt="pdf image" src="/static/images/large_pdf.gif" /></a>
+</td>
+<td align="center">&nbsp;
+
+</td>
+<td>
+    Airspace Management, System Metrics and Policy
+</td>
+</tr><tr>
+
+<td>25</td>
+<td>115</td>
+<td>
+    <strong>Predicting Congestion in the Northeast U.S.: A Search for Indicators</strong><br />
+    Author: <i>E. Beaton, John Brennan, James De Armon, Jeffrey Formosa, Kerry Levin, Shane Miller, Craig Wanke</i><br />
+</td>
+
+<td align="center">
+    <a href="/seminarContent/seminar3/papers/p_048_AMSMP.pdf" target="_blank"><img alt="pdf image" src="/static/images/large_pdf.gif" /></a>
+</td>
+<td align="center">&nbsp;
+
+</td>
+<td>
+    Safety
+</td>
+</tr><tr>
+
+<td>26</td>
+<td>116</td>
+<td>
+    <strong>RNAV Near-Term Terminal Procedures Development</strong><br />
+    Author: <i>Tom Becher, Jeffrey Formosa</i><br />
+</td>
+
+<td align="center">
+    <a href="/seminarContent/seminar3/papers/p_049_AGOADM.pdf" target="_blank"><img alt="pdf image" src="/static/images/large_pdf.gif" /></a>
+</td>
+<td align="center">&nbsp;
+
+</td>
+<td>
+    Safety
+</td>
+</tr><tr>
+
+<td>27</td>
+<td>117</td>
+<td>
+    <strong>Preliminary Observations about Providing Problem Resolution Advisories to Air Traffic Controllers</strong><br />
+    Author: <i>Dan B. Kirk, Winfield S. Heagy, Alvin L. McFarland, Michael J. Yablonski</i><br />
+</td>
+
+<td align="center">
+    <a href="/seminarContent/seminar3/papers/p_050_DSTCDM.pdf" target="_blank"><img alt="pdf image" src="/static/images/large_pdf.gif" /></a>
+</td>
+<td align="center">&nbsp;
+
+</td>
+<td>
+    Safety
+</td>
+</tr><tr>
+
+<td>28</td>
+<td>118</td>
+<td>
+    <strong>Operational Efficiency of Maneuver Coordination Rules for an Airborne Separation Assurance System</strong><br />
+    Author: <i>Raoul Schild, J.K Kuchar</i><br />
+</td>
+
+<td align="center">
+    <a href="/seminarContent/seminar3/papers/p_051_ASA.pdf" target="_blank"><img alt="pdf image" src="/static/images/large_pdf.gif" /></a>
+</td>
+<td align="center">&nbsp;
+
+</td>
+<td>
+    Safety
+</td>
+</tr><tr>
+
+<td>29</td>
+<td>119</td>
+<td>
+    <strong>A Methodology for the Design of a Route Network</strong><br />
+    Author: <i>Karim Mehadhebi</i><br />
+</td>
+
+<td align="center">
+    <a href="/seminarContent/seminar3/papers/p_053_AMSMP.pdf" target="_blank"><img alt="pdf image" src="/static/images/large_pdf.gif" /></a>
+</td>
+<td align="center">&nbsp;
+
+</td>
+<td>
+    Safety
+</td>
+</tr><tr>
+
+<td>30</td>
+<td>120</td>
+<td>
+    <strong>DADI - Datalinking of Aircraft-Derived Information</strong><br />
+    Author: <i>Tony Hughes</i><br />
+</td>
+
+<td align="center">
+    <a href="/seminarContent/seminar3/papers/p_054_DSTCDM.pdf" target="_blank"><img alt="pdf image" src="/static/images/large_pdf.gif" /></a>
+</td>
+<td align="center">&nbsp;
+
+</td>
+<td>
+    Safety
+</td>
+</tr><tr>
+
+<td>31</td>
+<td>121</td>
+<td>
+    <strong>ATM Support Tools in PHARE - The Importance of Matching the Concepts of Management or Control</strong><br />
+    Author: <i>Ian Wilson</i><br />
+</td>
+
+<td align="center">
+    <a href="/seminarContent/seminar3/papers/p_055_DSTCDM.pdf" target="_blank"><img alt="pdf image" src="/static/images/large_pdf.gif" /></a>
+</td>
+<td align="center">&nbsp;
+
+</td>
+<td>
+    Safety
+</td>
+</tr><tr>
+
+<td>32</td>
+<td>122</td>
+<td>
+    <strong>Probabilistic Wake Vortex Iinduced Accident Risk Assessment</strong><br />
+    Author: <i>J. Kos, H.A.P. Blom, L.J.P. Speijker, M.B. Klompstra, G.J. Bakker </i><br />
+</td>
+
+<td align="center">
+    <a href="/seminarContent/seminar3/papers/p_056_SSS.pdf" target="_blank"><img alt="pdf image" src="/static/images/large_pdf.gif" /></a>
+</td>
+<td align="center">&nbsp;
+
+</td>
+<td>
+    Safety
+</td>
+</tr><tr>
+
+<td>33</td>
+<td>123</td>
+<td>
+    <strong>Geometric and Probabilistic Approaches towards Conflict Prediction</strong><br />
+    Author: <i>H.A.P Blom, Harmen Kremer, Bert Bakker </i><br />
+</td>
+
+<td align="center">
+    <a href="/seminarContent/seminar3/papers/p_060_ASA.pdf" target="_blank"><img alt="pdf image" src="/static/images/large_pdf.gif" /></a>
+</td>
+<td align="center">&nbsp;
+
+</td>
+<td>
+    Safety
+</td>
+</tr><tr>
+
+<td>34</td>
+<td>124</td>
+<td>
+    <strong>An outline about the RDT CNS/ATM integrated Programme "Mediterranean Free Flight" of the Italian Agency for Air Navigation Services</strong><br />
+    Author: <i>Giancarlo Ferrara</i><br />
+</td>
+
+<td align="center">
+    <a href="/seminarContent/seminar3/papers/p_064_ASA.pdf" target="_blank"><img alt="pdf image" src="/static/images/large_pdf.gif" /></a>
+</td>
+<td align="center">&nbsp;
+
+</td>
+<td>
+    Safety
+</td>
+</tr><tr>
+
+<td>35</td>
+<td>125</td>
+<td>
+    <strong>Training Evaluation Approach of a new ATC Tool</strong><br />
+    Author: <i>Sonia Abdesslem, Marcel Leroux</i><br />
+</td>
+
+<td align="center">
+    <a href="/seminarContent/seminar3/papers/p_065_HFIHMI.pdf" target="_blank"><img alt="pdf image" src="/static/images/large_pdf.gif" /></a>
+</td>
+<td align="center">&nbsp;
+
+</td>
+<td>
+    Human Factors
+</td>
+</tr><tr>
+
+<td>36</td>
+<td>126</td>
+<td>
+    <strong>Investigating the Validity of Performance and Objective Workload Evaluation Research (POWER)</strong><br />
+    Author: <i>Carol Manning, Scott Mills, Cynthia Fox, Elaine Pfleiderer, Henry Mogilka</i><br />
+</td>
+
+<td align="center">
+    <a href="/seminarContent/seminar3/papers/p_066_HFIHMI.pdf" target="_blank"><img alt="pdf image" src="/static/images/large_pdf.gif" /></a>
+</td>
+<td align="center">&nbsp;
+
+</td>
+<td>
+    Human Factors
+</td>
+</tr><tr>
+
+<td>37</td>
+<td>127</td>
+<td>
+    <strong>Controller Roles - Time to change</strong><br />
+    Author: <i>Isabelle Pichancourt, Bob Graham, Alan Marsden, Frank Dowling</i><br />
+</td>
+
+<td align="center">
+    <a href="/seminarContent/seminar3/papers/p_067_HFIHMI.pdf" target="_blank"><img alt="pdf image" src="/static/images/large_pdf.gif" /></a>
+</td>
+<td align="center">&nbsp;
+
+</td>
+<td>
+    Human Factors
+</td>
+</tr><tr>
+
+<td>38</td>
+<td>128</td>
+<td>
+    <strong>A Conceptual Design of a Departure Planner Decision Aid</strong><br />
+    Author: <i>John-Paul Clarke, Ioannis Anagnostakis, Husni Idris, Eric Feron, R. John Hansman, Amadeo R. Odoni, William D.Hall</i><br />
+</td>
+
+<td align="center">
+    <a href="/seminarContent/seminar3/papers/p_068_AGOADM.pdf" target="_blank"><img alt="pdf image" src="/static/images/large_pdf.gif" /></a>
+</td>
+<td align="center">&nbsp;
+
+</td>
+<td>
+    Safety
+</td>
+</tr><tr>
+
+<td>39</td>
+<td>129</td>
+<td>
+    <strong>Modeling Distributed Human Decision-Making in Traffic Flow Management Operations</strong><br />
+    Author: <i>Leonard A. Wojcik, Keith C. Campbell, Wayne W. Cooper, Daniel P. Greennbaum</i><br />
+</td>
+
+<td align="center">
+    <a href="/seminarContent/seminar3/papers/p_071_DSTCDM.pdf" target="_blank"><img alt="pdf image" src="/static/images/large_pdf.gif" /></a>
+</td>
+<td align="center">&nbsp;
+
+</td>
+<td>
+    Safety
+</td>
+</tr><tr>
+
+<td>40</td>
+<td>130</td>
+<td>
+    <strong>SafeFlight 21: The 1999 Operational Evaluation of ADS-B Applications</strong><br />
+    Author: <i>Jim Cieplak, Edward Hahn, Baltazar O. Olmos</i><br />
+</td>
+
+<td align="center">
+    <a href="/seminarContent/seminar3/papers/p_072_ASA.pdf" target="_blank"><img alt="pdf image" src="/static/images/large_pdf.gif" /></a>
+</td>
+<td align="center">&nbsp;
+
+</td>
+<td>
+    Safety
+</td>
+</tr><tr>
+
+<td>41</td>
+<td>131</td>
+<td>
+    <strong>The Effects of Schedule Disruptions on the Economics of Airline Operations</strong><br />
+    Author: <i>Zalman A.Shavell</i><br />
+</td>
+
+<td align="center">
+    <a href="/seminarContent/seminar3/papers/p_073_AMSMP.pdf" target="_blank"><img alt="pdf image" src="/static/images/large_pdf.gif" /></a>
+</td>
+<td align="center">&nbsp;
+
+</td>
+<td>
+    Safety
+</td>
+</tr><tr>
+
+<td>42</td>
+<td>132</td>
+<td>
+    <strong>Integrating the Cockpit with Air Traffic Management: the Concept of Path Objects</strong><br />
+    Author: <i>John Barrer</i><br />
+</td>
+
+<td align="center">
+    <a href="/seminarContent/seminar3/papers/p_074_DSTCDM.pdf" target="_blank"><img alt="pdf image" src="/static/images/large_pdf.gif" /></a>
+</td>
+<td align="center">&nbsp;
+
+</td>
+<td>
+    Safety
+</td>
+</tr><tr>
+
+<td>43</td>
+<td>133</td>
+<td>
+    <strong>Closed Loop Forecasting of Air Traffic Demand and Delay</strong><br />
+    Author: <i>Jesse Johnson, Peter Kostiuk, David Lee, Dou Long</i><br />
+</td>
+
+<td align="center">
+    <a href="/seminarContent/seminar3/papers/p_080_AMSMP.pdf" target="_blank"><img alt="pdf image" src="/static/images/large_pdf.gif" /></a>
+</td>
+<td align="center">&nbsp;
+
+</td>
+<td>
+    Safety
+</td>
+</tr><tr>
+
+<td>44</td>
+<td>134</td>
+<td>
+    <strong>Trajectory Orientation: A Technology-Enabled Concept Requiring a Shift in Controller Roles and Responsibilities</strong><br />
+    Author: <i>Ken Leiden, Steve Green</i><br />
+</td>
+
+<td align="center">
+    <a href="/seminarContent/seminar3/papers/p_081_DSTCDM.pdf" target="_blank"><img alt="pdf image" src="/static/images/large_pdf.gif" /></a>
+</td>
+<td align="center">&nbsp;
+
+</td>
+<td>
+    Safety
+</td>
+</tr><tr>
+
+<td>45</td>
+<td>135</td>
+<td>
+    <strong>Free Flight and the Context of Control: Experiments and Modeling to determine the impact of distributed air-ground air traffic management on safety and procedures</strong><br />
+    Author: <i>Kevin Corker, Brian Gore, Kenneth Fleming, John Lane</i><br />
+</td>
+
+<td align="center">
+    <a href="/seminarContent/seminar3/papers/p_082_HFIHMI.pdf" target="_blank"><img alt="pdf image" src="/static/images/large_pdf.gif" /></a>
+</td>
+<td align="center">&nbsp;
+
+</td>
+<td>
+    Human Factors
+</td>
+</tr><tr>
+
+<td>46</td>
+<td>136</td>
+<td>
+    <strong>Flight Test Results: CTAS and FMS Cruise/Descent Trajectory Prediction Accuracy</strong><br />
+    Author: <i>Steve Green, Michael P. Grace, David H. Williams</i><br />
+</td>
+
+<td align="center">
+    <a href="/seminarContent/seminar3/papers/p_084_AGOADM.pdf" target="_blank"><img alt="pdf image" src="/static/images/large_pdf.gif" /></a>
+</td>
+<td align="center">&nbsp;
+
+</td>
+<td>
+    Safety
+</td>
+</tr><tr>
+
+<td>47</td>
+<td>137</td>
+<td>
+    <strong>The Operational Assessment of Free Flight Phase 1 ATM Capabilities</strong><br />
+    Author: <i>David Knorr,, Joseph Post,, Jeff Biros, Michelle Blucher</i><br />
+</td>
+
+<td align="center">
+    <a href="/seminarContent/seminar3/papers/p_088_ASA.pdf" target="_blank"><img alt="pdf image" src="/static/images/large_pdf.gif" /></a>
+</td>
+<td align="center">&nbsp;
+
+</td>
+<td>
+    Safety
+</td>
+</tr><tr>
+
+<td>48</td>
+<td>138</td>
+<td>
+    <strong>Lessons learnt from CENA-PHARE experiment and requirements for future evaluation of novel concepts in ATC</strong><br />
+    Author: <i>Didier Pavet</i><br />
+</td>
+
+<td align="center">
+    <a href="/seminarContent/seminar3/papers/p_089_DSTCDM.pdf" target="_blank"><img alt="pdf image" src="/static/images/large_pdf.gif" /></a>
+</td>
+<td align="center">&nbsp;
+
+</td>
+<td>
+    Safety
+</td>
+</tr><tr>
+
+<td>49</td>
+<td>139</td>
+<td>
+    <strong>Trajectory Prediction Concepts for Next Generation Air Traffic Management</strong><br />
+    Author: <i>Tony Warren</i><br />
+</td>
+
+<td align="center">
+    <a href="/seminarContent/seminar3/papers/p_091_AGOADM.pdf" target="_blank"><img alt="pdf image" src="/static/images/large_pdf.gif" /></a>
+</td>
+<td align="center">&nbsp;
+
+</td>
+<td>
+    Safety
+</td>
+</tr><tr>
+
+<td>50</td>
+<td>140</td>
+<td>
+    <strong>Human cognition modelling in ATM safety assessment</strong><br />
+    Author: <i>Henk Blom, Jasper Daams, Herman .B. Nijhuuis</i><br />
+</td>
+
+<td align="center">
+    <a href="/seminarContent/seminar3/papers/p_092_SSS.pdf" target="_blank"><img alt="pdf image" src="/static/images/large_pdf.gif" /></a>
+</td>
+<td align="center">&nbsp;
+
+</td>
+<td>
+    Safety
+</td>
+</tr><tr>
+
+<td>51</td>
+<td>141</td>
+<td>
+    <strong>Striving for Adequacy: The Importance of Rich HMI Requirements</strong><br />
+    Author: <i>Alistair Jackson, Sacha Dorbes, Isabelle Pichancourt</i><br />
+</td>
+
+<td align="center">
+    <a href="/seminarContent/seminar3/papers/p_094_HFIHMI.pdf" target="_blank"><img alt="pdf image" src="/static/images/large_pdf.gif" /></a>
+</td>
+<td align="center">&nbsp;
+
+</td>
+<td>
+    Human Factors
+</td>
+</tr><tr>
+
+<td>52</td>
+<td>142</td>
+<td>
+    <strong>The Computerized Analysis of ATC Tracking Data for an Operational Evaluation of CDTI/ADS-B Technology</strong><br />
+    Author: <i>Scott Mills</i><br />
+</td>
+
+<td align="center">
+    <a href="/seminarContent/seminar3/papers/p_100_ASA.pdf" target="_blank"><img alt="pdf image" src="/static/images/large_pdf.gif" /></a>
+</td>
+<td align="center">&nbsp;
+
+</td>
+<td>
+    Safety
+</td>
+</tr><tr>
+
+<td>53</td>
+<td>143</td>
+<td>
+    <strong>Performance Measures for Future Architecture</strong><br />
+    Author: <i>Steve Bradford, Diana Liang, David Knorr</i><br />
+</td>
+
+<td align="center">
+    <a href="/seminarContent/seminar3/papers/p_102_AMSMP.pdf" target="_blank"><img alt="pdf image" src="/static/images/large_pdf.gif" /></a>
+</td>
+<td align="center">&nbsp;
+
+</td>
+<td>
+    Safety
+</td>
+</tr><tr>
+
+<td>54</td>
+<td>144</td>
+<td>
+    <strong>The Balance of Aviation Activities and Environmental Mitigation Strategies</strong><br />
+    Author: <i>Diana Liang, Steve Bradford, Fran Melone</i><br />
+</td>
+
+<td align="center">
+    <a href="/seminarContent/seminar3/papers/p_103_AMSMP.pdf" target="_blank"><img alt="pdf image" src="/static/images/large_pdf.gif" /></a>
+</td>
+<td align="center">&nbsp;
+
+</td>
+<td>
+    Safety
+</td>
+</tr><tr>
+
+<td>55</td>
+<td>145</td>
+<td>
+    <strong>Analysis of Separation Minima using a surveillance state vector approach</strong><br />
+    Author: <i>R. John Hansman, Tom G. Reynolds</i><br />
+</td>
+
+<td align="center">
+    <a href="/seminarContent/seminar3/papers/p_105_SSS.pdf" target="_blank"><img alt="pdf image" src="/static/images/large_pdf.gif" /></a>
+</td>
+<td align="center">&nbsp;
+
+</td>
+<td>
+    Safety
+</td>
+</tr><tr>
+
+<td>56</td>
+<td>146</td>
+<td>
+    <strong>Pushing the limits of ATC user interface design beyond SM interaction: the DigiStrips experience</strong><br />
+    Author: <i>Christophe Mertz, Stphane Chatty, Jean-Luc Vinot</i><br />
+</td>
+
+<td align="center">
+    <a href="/seminarContent/seminar3/papers/p_106_HFIHMI.pdf" target="_blank"><img alt="pdf image" src="/static/images/large_pdf.gif" /></a>
+</td>
+<td align="center">&nbsp;
+
+</td>
+<td>
+    Human Factors
+</td>
+</tr><tr>
+
+<td>57</td>
+<td>147</td>
+<td>
+    <strong>The influence of ATC in approach noise abatement</strong><br />
+    Author: <i>Andy D. Kershaw, Darren P. Rhodes, N.A. Smith</i><br />
+</td>
+
+<td align="center">
+    <a href="/seminarContent/seminar3/papers/p_107_AGOADM.pdf" target="_blank"><img alt="pdf image" src="/static/images/large_pdf.gif" /></a>
+</td>
+<td align="center">&nbsp;
+
+</td>
+<td>
+    Safety
+</td>
+</tr><tr>
+
+<td>58</td>
+<td>148</td>
+<td>
+    <strong>Wind prediction accuracy for ATM decision support tools</strong><br />
+    Author: <i>Steve Green, Rod Cole, Matt Jardin, Barry E. Schwartz, Stanley G. Benjamin</i><br />
+</td>
+
+<td align="center">
+    <a href="/seminarContent/seminar3/papers/p_110_DSTCDM.pdf" target="_blank"><img alt="pdf image" src="/static/images/large_pdf.gif" /></a>
+</td>
+<td align="center">&nbsp;
+
+</td>
+<td>
+    Safety
+</td>
+</tr><tr>
+
+<td>59</td>
+<td>149</td>
+<td>
+    <strong>Analysis and Modeling of Ground Operations at Hub Airports</strong><br />
+    Author: <i>Eric Feron, Kari Anderson, Francis Carr, William D. Hall</i><br />
+</td>
+
+<td align="center">
+    <a href="/seminarContent/seminar3/papers/p_111_AGOADM.pdf" target="_blank"><img alt="pdf image" src="/static/images/large_pdf.gif" /></a>
+</td>
+<td align="center">&nbsp;
+
+</td>
+<td>
+    Safety
+</td>
+</tr><tr>
+
+<td>60</td>
+<td>150</td>
+<td>
+    <strong>Comparison of US and European Airports and Airspace to Support Concept Validation</strong><br />
+    Author: <i>William Marnane, Jonathan Green, Diana Liang, Steve Bradford</i><br />
+</td>
+
+<td align="center">
+    <a href="/seminarContent/seminar3/papers/p_112_AMSMP.pdf" target="_blank"><img alt="pdf image" src="/static/images/large_pdf.gif" /></a>
+</td>
+<td align="center">&nbsp;
+
+</td>
+<td>
+    Safety
+</td>
+</tr><tr>
+
+<td>61</td>
+<td>151</td>
+<td>
+    <strong>The impact of human factors on ASAS</strong><br />
+    Author: <i>Daniel Ferro</i><br />
+</td>
+
+<td align="center">
+    <a href="/seminarContent/seminar3/papers/p_116_HFIHMI.pdf" target="_blank"><img alt="pdf image" src="/static/images/large_pdf.gif" /></a>
+</td>
+<td align="center">&nbsp;
+
+</td>
+<td>
+    Human Factors
+</td>
+</tr><tr>
+
+<td>62</td>
+<td>152</td>
+<td>
+    <strong>Is limited delegation of separation assurance promising?</strong><br />
+    Author: <i>Eric Hoffman, Karim Zeghal, Anne Cloerec, Isabelle Grimaud, Jean-Pierre Nicolaon</i><br />
+</td>
+
+<td align="center">
+    <a href="/seminarContent/seminar3/papers/p_118_HFIHMI.pdf" target="_blank"><img alt="pdf image" src="/static/images/large_pdf.gif" /></a>
+</td>
+<td align="center">&nbsp;
+
+</td>
+<td>
+    Human Factors
+</td>
+</tr><tr>
+
+<td>63</td>
+<td>153</td>
+<td>
+    <strong>PD/3 - A Contribution to the Future of ATM</strong><br />
+    Author: <i>Wim Post</i><br />
+</td>
+
+<td align="center">
+    <a href="/seminarContent/seminar3/papers/p_125_DSTCDM.pdf" target="_blank"><img alt="pdf image" src="/static/images/large_pdf.gif" /></a>
+</td>
+<td align="center">&nbsp;
+
+</td>
+<td>
+    Safety
+</td>
+</tr><tr>
+
+<td>64</td>
+<td>154</td>
+<td>
+    <strong>Put in Operation a Complex System is not only a Technical Challenge - Transition to a newly Automated Environment</strong><br />
+    Author: <i>Paola Amaldi, Nadio Di Rienzo, Giancarlo Barale</i><br />
+</td>
+
+<td align="center">
+    <a href="/seminarContent/seminar3/papers/p_127_HFIHMI.pdf" target="_blank"><img alt="pdf image" src="/static/images/large_pdf.gif" /></a>
+</td>
+<td align="center">&nbsp;
+
+</td>
+<td>
+    Human Factors
+</td>
+</tr>
+  </tbody>
+</table>
+
+
+        <!-- Footer -->
+        <footer>
+            <div class="row">
+                <div class="col-lg-12">
+                    <div class="container">
+                    <p>Copyright &copy; ATM Seminar 2018</p>
+                        </div>
+                </div>
+            </div>
+            <!-- /.row -->
+        </footer>
+
+    </div>
+    <!-- /.container -->
+
+    <!-- jQuery -->
+    <script src="../../static/js/jquery.js"></script>
+
+    <!-- Bootstrap Core JavaScript -->
+    <script src="../../static/js/bootstrap.min.js"></script>
+    
+        
+
+</body>
+    
+
+    
+</html>
